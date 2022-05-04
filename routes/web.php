@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\TeamController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [FrontendController::class,'index']);
+
+Route::get('/event-registration',[FrontendController::class,'register_for_event'])->name('eventReg');
+Route::post('/event-registration-store',[TeamController::class,'store'])->name('store.registration');
 
 Auth::routes();
 

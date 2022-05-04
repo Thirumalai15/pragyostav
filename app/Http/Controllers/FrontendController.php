@@ -10,4 +10,9 @@ class FrontendController extends Controller
     {
         return view('frontend.index');
     }
+
+    public function register_for_event()
+    {
+        return view('frontend.register');
+    }
 }

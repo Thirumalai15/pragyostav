@@ -76,7 +76,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        <a target="_blank" href="#" class="btn btn-primary">Register Now!</a>
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
 
                     </div>
                 </div>
@@ -184,7 +184,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        <a target="_blank" href="#" class="btn btn-primary">Register Now!</a>
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
 
                     </div>
                 </div>
@@ -348,7 +348,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        {{--                    <a target="_blank" href="{{ url_for('register') }}" class="btn btn-primary">Register Now!</a>--}}
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
             </div>
@@ -417,7 +417,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        {{--                    <a target="_blank" href="{{ url_for('register') }}" class="btn btn-primary">Register Now!</a>--}}
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
             </div>
@@ -482,7 +482,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        {{--                    <a target="_blank" href="{{ url_for('register') }}" class="btn btn-primary">Register Now!</a>--}}
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
             </div>
@@ -568,7 +568,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        {{--                    <a target="_blank" href="{{ url_for('register') }}" class="btn btn-primary">Register Now!</a>--}}
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
             </div>
@@ -677,7 +677,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        {{--                    <a target="_blank" href="{{ url_for('register') }}"--}}
+                                            <a target="_blank" href="{{ route('eventReg') }}"
                         class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
@@ -748,7 +748,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        <a target="_blank" href="#" class="btn btn-primary">Register Now!</a>
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
             </div>
@@ -792,7 +792,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        <a target="_blank" href="#" class="btn btn-primary">Register Now!</a>
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
             </div>
@@ -1204,7 +1204,7 @@
                     <div class="section-heading-wrap text-center mb-5">
                         <!-- designed by me... enjoy! -->
                         <div class="wrapper">
-                            <a class="cta" target="_blank" href="#">
+                            <a class="cta" target="_blank" href="{{ route('eventReg') }}">
                                 <span id="sspan">Register Online!! </span>
                                 <span id="sspan">
                                     <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1"
