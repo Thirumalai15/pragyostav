@@ -16,10 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [FrontendController::class,'index'])->name('home');
+Route::get('/', [FrontendController::class,'index'])->name('index');
 
 Route::get('/event-registration',[FrontendController::class,'register_for_event'])->name('eventReg');
 Route::post('/event-registration-store',[TeamController::class,'store'])->name('store.registration');
+
+Route::post('/contact-us',[FrontendController::class,'contact_us'])->name('contact');
 
 Auth::routes(['register' => false]);
 
@@ -27,3 +29,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/dashboard',[DashboardController::class,'index'])->middleware('auth')->name('dashboard');
 Route::post('/change-status/{reg_id}',[DashboardController::class,'change_status'])->middleware('auth')->name('change_status');
+Route::get('/export-data',[DashboardController::class,'export'])->middleware('auth')->name('export');
+

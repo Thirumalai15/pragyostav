@@ -22,9 +22,9 @@ This e-mail is to inform you that you have been successfully registered for the 
 <p>If you have any doubts regarding this event, you can contact us at any time.</p>
 
 @component('mail::panel')
-Contact Number : <strong>12456789</strong>
+Contact Number : Keshav G - President <strong>9884809092 </strong>
 <br>
-Contact Email : <strong>iete@gmail.com</strong>
+Contact Email : <strong>eec.ieteforum@gmail.com</strong>
 @endcomponent
 <p style="text-align: center"><strong>All The Best 😁</strong></p>
 <br>

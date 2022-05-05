@@ -1,7 +1,9 @@
 
-             
+* {
+  font-family: 'League Spartan', sans-serif;
+}
 body {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;/* color: #D4AF37;*/
+  /*font-family: 'monospace', sans-serif;!* color: #D4AF37;*!*/
  color:#fffec1;
   font-size: 16px;
   line-height: 30px;
@@ -92,9 +94,9 @@ a, a:hover {
 
 }
 .listing-item:hover,  .listing-item.active{
- -webkit-transform: scale(1.2);
- -moz-transform: scale(1.2);
-   transform: scale(1.2);
+ -webkit-transform: scale(1.08);
+ -moz-transform: scale(1.08);
+   transform: scale(1.08);
    -webkit-transition: all 0.3s;
  -moz-transition: all 0.3s;
    transition: all 0.3s;

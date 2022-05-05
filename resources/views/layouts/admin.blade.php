@@ -21,10 +21,11 @@
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="{{ asset('admin/assets/css/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('admin/assets/css/atlantis.min.css') }}">
-
+	<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
     
 	<!-- CSS Just for demo purpose, don't include it in your project -->
 	<!-- <link rel="stylesheet" href="../assets/css/demo.css"> -->
+
 </head>
 <body >
 
@@ -44,6 +45,7 @@
 	<!-- jQuery Scrollbar -->
 
     <script src="{{ asset('admin/assets/js/plugin/datatables/datatables.min.js') }} "></script>
+ <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
     <script>
         $(document).ready(function() {
                 $('#basic-datatables').DataTable({

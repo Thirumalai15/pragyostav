@@ -37,7 +37,9 @@
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-
+* {
+  font-family: 'League Spartan', sans-serif;
+}
 html {
   
   line-height: 1.15;
