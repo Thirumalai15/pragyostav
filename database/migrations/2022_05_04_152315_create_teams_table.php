@@ -33,6 +33,7 @@ return new class extends Migration {
             $table->string('member_2_department')->nullable();
             $table->string('member_2_college')->nullable();
             $table->boolean('attendance')->default(0);
+            $table->string('image');
             $table->timestamps();
         });
     }

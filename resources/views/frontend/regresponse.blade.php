@@ -3,12 +3,12 @@
 
 <head>
     <title>Pragyotsav&mdash; A National Level Technical Festival</title>
-    <link rel="icon" type="image/xl-icon" href="{{ url_for('static',    filename='images/prag.png') }}">
+    <link rel="icon" type="image/xl-icon" href="{{ asset('theme/images/prag.png') }}">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="{{ url_for('static',    filename='css/vendor/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('theme/vendor/bootstrap.min.css') }}">
    
     <style>
       
@@ -100,8 +100,8 @@ body:before {
    
     <body>
       <div style="text-align: center; margin-bottom: -100px;">
-        <img class="titl" src="{{url_for('static', filename='images/titlelogo.webp')}}" alt="Pragyotsav 2022"
-            onerror="this.onerror=null;this.src='static/images/titlelogo.png';">
+        <img class="titl" src="{{ asset('theme/images/titlelogo.webp')}}" alt="Pragyotsav 2022"
+            >
 
     </div>
       <div class="card">
@@ -110,14 +110,14 @@ body:before {
       </div>
         <h1>Listed Successfully!!</h1> 
         <ul style="list-style-type: none; ">
-          <li>Registration Id :&nbsp; {{reg}}</li>
-          <li>Name :&nbsp;{{name}} </li>
-          <li>Event :&nbsp;{{ename}} </li>
-            <li>Kindly take record the above details for future references!!
+          <li>Registration Id :&nbsp; {{ $team_update->reg_id }}</li>
+          
+          <li>Event :&nbsp;{{ $team_update->event_name }} </li>
+            <li>Kindly  record the above details for future references!!
             </li>
         </ul>
         <br>
-        <a href="{{ url_for('home') }}"class="button-34">Redirect-Home</a>
+        <a href="{{ route('home') }}"class="button-34">Home</a>
       </div>
     </body>
 </html>

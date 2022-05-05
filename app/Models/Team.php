@@ -28,6 +28,7 @@ class Team extends Model
         'member_2_year',
         'member_2_department',
         'member_2_college',
-        'attendance' // 0 => for absent , 1 => present
+        'attendance', // 0 => for absent , 1 => present
+        'image'
     ];
 }

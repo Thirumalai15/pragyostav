@@ -9,7 +9,9 @@ use Illuminate\Support\Str;
 class TeamController extends Controller
 {
     public function store(Request $request)
-    {
+    {  
+
+
         $team = new Team;
         $team->reg_id = Str::random('7');
         $team->event_name = $request->event;
@@ -29,6 +31,7 @@ class TeamController extends Controller
         $team->member_2_phone = $request->phone_2;
         $team->member_2_college = $request->college_2;
         $team->member_2_year = $request->year_2;
+        $team->image = '';
         $team->save();
 
         $team_update = Team::find($team->id);
@@ -46,12 +49,23 @@ class TeamController extends Controller
             $reg_id = $team->reg_id . '-' . $team_update->id;
         }
 
+        if($request->hasFile('file')) 
+        {
+            $imageName = $reg_id.'.'.$request->file->extension();  
+
+        //    $imagePath =  $request->file->move(public_path('payments',$imageName));
+           $imagePath =  $request->file->storeAs('payments',$imageName,'public');
+
+        }
+
         $team_update->update([
-            'reg_id' => $reg_id
+            'reg_id' => $reg_id,
+            'image' => $imagePath,
         ]);
+        
 
 
-        return redirect(route('eventReg'));
+        return view('frontend.regresponse',compact('team_update'));
 
 //        TODO : Redirect with status show the status message
 //        TODO: Add validation and save the payment screenshot

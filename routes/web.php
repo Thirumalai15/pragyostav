@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TeamController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,11 +16,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [FrontendController::class,'index']);
+Route::get('/', [FrontendController::class,'index'])->name('home');
 
 Route::get('/event-registration',[FrontendController::class,'register_for_event'])->name('eventReg');
 Route::post('/event-registration-store',[TeamController::class,'store'])->name('store.registration');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/dashboard',[DashboardController::class,'index'])->middleware('auth')->name('dashboard');
+Route::post('/change-status/{reg_id}',[DashboardController::class,'change_status'])->middleware('auth')->name('change_status');

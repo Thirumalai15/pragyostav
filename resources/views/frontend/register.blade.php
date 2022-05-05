@@ -137,6 +137,17 @@
             border: none;
             outline: none;
         }
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
     </style>
 </head>
 
@@ -171,7 +182,7 @@
                 </div>
                 <div class="idiots" id="racing" style="display: none;">
                     <h4 class="zxcv" class="zxcv">You are registering for rc robo racing!</h4>
-                    <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="{{ route('store.registration') }} route('store.registration') }}"
+                    <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="{{ route('store.registration') }}"
                           class="contactForm">
                         @csrf
                         <div class="row">
@@ -184,7 +195,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="TeamLead" placeholder="Name"
-                                           required>
+                                           required value="{{ old('TeamLead') }}">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -195,8 +206,8 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
-                                           placeholder="Contact Number" required>
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                           placeholder="Contact Number"  required>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -254,7 +265,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone_1" maxlength="10" class="form-control rem1"
+                                        <input type="number" name="phone_1" maxlength="10" class="form-control rem1"
                                                placeholder="Contact Number">
                                     </div>
                                 </div>
@@ -305,7 +316,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone_2" maxlength="10" class="form-control rem2"
+                                        <input type="number" name="phone_2" maxlength="10" class="form-control rem2"
                                                placeholder="Contact Number">
                                     </div>
                                 </div>
@@ -373,7 +384,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
                                            placeholder="Contact Number" required>
                                 </div>
                             </div>
@@ -430,7 +441,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone_1" maxlength="10" class="form-control rem1"
+                                        <input type="number" name="phone_1" maxlength="10" class="form-control rem1"
                                                placeholder="Contact Number">
                                     </div>
                                 </div>
@@ -481,7 +492,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone_2" maxlength="10" class="form-control rem2"
+                                        <input type="number" name="phone_2" maxlength="10" class="form-control rem2"
                                                placeholder="Contact Number">
                                     </div>
                                 </div>
@@ -548,7 +559,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
                                            placeholder="Contact Number" required>
                                 </div>
                             </div>
@@ -607,7 +618,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone_1" maxlength="10" class="form-control rem1"
+                                        <input type="number" name="phone_1" maxlength="10" class="form-control rem1"
                                                placeholder="Contact Number">
                                     </div>
                                 </div>
@@ -658,7 +669,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone_2" maxlength="10" class="form-control rem2"
+                                        <input type="number" name="phone_2" maxlength="10" class="form-control rem2"
                                                placeholder="Contact Number">
                                     </div>
                                 </div>
@@ -727,7 +738,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
                                            placeholder="Contact Number" required>
                                 </div>
                             </div>
@@ -786,7 +797,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone_1" maxlength="10" class="form-control rem1"
+                                        <input type="number" name="phone_1" maxlength="10" class="form-control rem1"
                                                placeholder="Contact Number">
                                     </div>
                                 </div>
@@ -837,7 +848,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone_2" maxlength="10" class="form-control rem2"
+                                        <input type="number" name="phone_2" maxlength="10" class="form-control rem2"
                                                placeholder="Contact Number">
                                     </div>
                                 </div>
@@ -906,7 +917,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
                                            placeholder="Contact Number" required>
                                 </div>
                             </div>
@@ -965,7 +976,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone_1" maxlength="10" class="form-control rem1"
+                                        <input type="number" name="phone_1" maxlength="10" class="form-control rem1"
                                                placeholder="Contact Number">
                                     </div>
                                 </div>
@@ -1016,7 +1027,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone_2" maxlength="10" class="form-control rem2"
+                                        <input type="number" name="phone_2" maxlength="10" class="form-control rem2"
                                                placeholder="Contact Number">
                                     </div>
                                 </div>
@@ -1085,7 +1096,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
                                            placeholder="Contact Number" required>
                                 </div>
                             </div>
@@ -1144,7 +1155,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone_1" maxlength="10" class="form-control rem1"
+                                        <input type="number" name="phone_1" maxlength="10" class="form-control rem1"
                                                placeholder="Contact Number">
                                     </div>
                                 </div>
@@ -1195,7 +1206,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone_2" maxlength="10" class="form-control rem2"
+                                        <input type="number" name="phone_2" maxlength="10" class="form-control rem2"
                                                placeholder="Contact Number">
                                     </div>
                                 </div>
@@ -1264,7 +1275,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
                                            placeholder="Contact Number" required>
                                 </div>
                             </div>
@@ -1323,7 +1334,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone_1" maxlength="10" class="form-control rem1"
+                                        <input type="number" name="phone_1" maxlength="10" class="form-control rem1"
                                                placeholder="Contact Number">
                                     </div>
                                 </div>
@@ -1374,7 +1385,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone_2" maxlength="10" class="form-control rem2"
+                                        <input type="number" name="phone_2" maxlength="10" class="form-control rem2"
                                                placeholder="Contact Number">
                                     </div>
                                 </div>
@@ -1443,7 +1454,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
                                            placeholder="Contact Number" required>
                                 </div>
                             </div>
@@ -1502,7 +1513,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone_1" maxlength="10" class="form-control rem1"
+                                        <input type="number" name="phone_1" maxlength="10" class="form-control rem1"
                                                placeholder="Contact Number">
                                     </div>
                                 </div>
@@ -1553,7 +1564,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="tel" name="phone_2" maxlength="10" class="form-control rem2"
+                                        <input type="number" name="phone_2" maxlength="10" class="form-control rem2"
                                                placeholder="Contact Number">
                                     </div>
                                 </div>
@@ -1621,7 +1632,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
                                            placeholder="Contact Number" required>
                                 </div>
                             </div>
@@ -1666,11 +1677,13 @@
             </div>
         </div>
         <div class="col-md-5 d-flex align-items-stretch" style="position: relative;">
-            <div>
+            <div
                 <figure>
-                    <img src="{{ asset('theme/images/eventlogo.png')}}"
-                         class="info-wrap w-100 p-5 img" style="object-fit: cover;" align="middle"/>
-                    <figcaption>Upi id: phone number:</figcaption>
+                    <img src="{{ asset('theme/qrcode.png')}}"
+                         class="info-wrap sm:pl-5 img" style=" height: 50%; width: auto;" align="middle"/>
+                    <figcaption class="text-center">Upi id: swetha060701@oksbi 
+                        <br>
+                         Phone number : 7358866388</figcaption>
                 </figure>
             </div>
         </div>
