@@ -20,7 +20,7 @@ Route::get('/', [FrontendController::class,'index'])->name('index');
 
 Route::get('/event-registration',[FrontendController::class,'register_for_event'])->name('eventReg');
 Route::post('/event-registration-store',[TeamController::class,'store'])->name('store.registration');
-
+Route::get('/event-registration-successful/{team_update}',[TeamController::class,'registration_successful'])->name('registration.successful');
 Route::post('/contact-us',[FrontendController::class,'contact_us'])->name('contact');
 
 Auth::routes(['register' => false]);

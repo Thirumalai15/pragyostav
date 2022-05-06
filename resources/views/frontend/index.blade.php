@@ -677,8 +677,8 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                                            <a target="_blank" href="{{ route('eventReg') }}"
-                        class="btn btn-primary">Register Now!</a>
+                        <a target="_blank" href="{{ route('eventReg') }}"
+                           class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
             </div>
@@ -825,7 +825,7 @@
 
                             <ul class="site-nav-ul js-clone-nav d-none d-lg-inline-block">
 
-                                <li class="has-children">
+                                <li>
                                     <a href="#home-section" class="nav-link">Home</a>
                                 </li>
 
@@ -838,9 +838,14 @@
                             </ul>
 
                             <ul class="site-nav-ul-none-onepage text-left d-inline-block d-lg-none">
-                                <li><a href="#" class="js-menu-toggle"><img
-                                                src="{{ asset('theme/images/menuicon.jpg') }}"
-                                                style="width: 20px; height: 20px;filter: invert(100%)"></a></li>
+                                <li><a href="#" class="js-menu-toggle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffc300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <line x1="4" y1="6" x2="20" y2="6" />
+                                            <line x1="4" y1="12" x2="20" y2="12" />
+                                            <line x1="4" y1="18" x2="20" y2="18" />
+                                        </svg>
+                                    </a></li>
                             </ul>
 
                         </div>
@@ -868,10 +873,10 @@
                                                      alt="Pragyotsav 2022" style="max-width: 100%; height: auto;"></h1>
 
                             <h5 class="subheading"> A National Level Technical Festival.</h5>
-{{--                            <div id="lol"><h6 class="subheading">Launching in</h6></div>--}}
-{{--                            <div id="loo">--}}
-{{--                                <h6 class="subheading">in <span id="demo"></span></h6>--}}
-{{--                            </div>--}}
+                            {{--                            <div id="lol"><h6 class="subheading">Launching in</h6></div>--}}
+                            {{--                            <div id="loo">--}}
+                            {{--                                <h6 class="subheading">in <span id="demo"></span></h6>--}}
+                            {{--                            </div>--}}
                         </div>
 
                     </div>

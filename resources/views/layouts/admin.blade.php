@@ -33,6 +33,13 @@
  <main>
      @yield('content')
  </main>
+ <footer class="footer">
+	 <div class="container">
+		 <div class="copyright ml-auto">
+			 Made with ♥ by Rithish Kumar and Thirumalai 😎
+		 </div>
+	 </div>
+ </footer>
 
  <script src="{{ asset('admin/assets/js/core/jquery.3.2.1.min.js') }}"></script>
 	<script src="{{ asset('admin/assets/js/core/popper.min.js') }}"></script>

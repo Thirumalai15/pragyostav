@@ -64,13 +64,17 @@ class TeamController extends Controller
             'image' => $imagePath,
         ]);
 
+        return redirect(route('registration.successful',$team_update->reg_id));
 
-        return view('frontend.regresponse', compact('team_update'));
+    }
 
-//        TODO : Redirect with status show the status message
-//        TODO: Add validation and save the payment screenshot
-//        TODO: Queue email for faster page loading
-
-
+    public function registration_successful($team_update)
+    {
+        $team = Team::where('reg_id','=',$team_update)->first();
+        if(!$team_update) {
+            return abort(404);
+        }
+//        dd($team);
+        return view('frontend.regresponse', compact('team'));
     }
 }

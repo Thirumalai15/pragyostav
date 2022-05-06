@@ -3,9 +3,21 @@
 @section('content')
     <div class="container">
         <div class="">
-            <div class="mt-3 mb-4">
-                <h2 class=" pb-2">Welcome back, {{ auth()->user()->name }}!</h2>
-                {{--						<h5 class="op-7 mb-4">Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.</h5>--}}
+            <div class="mt-3 mb-4 d-flex justify-content-between">
+                <h2 class=" pb-2">Pragyotsav 2022 Admin Panel</h2>
+                <div>
+                    <form id="logout_form" action="{{ route('logout') }}" method="POST">
+                        @csrf
+                        <button type="submit" class="btn btn-icon btn-round btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"/>
+                                <path d="M7 12h14l-3 -3m0 6l3 -3"/>
+                            </svg>
+                        </button>
+                    </form>
+
+                </div>
             </div>
             <div class="row">
                 <div class="col-sm-6 col-md-3">
@@ -191,9 +203,9 @@
             <div class="card">
                 <div class="card-header d-flex justify-content-between">
                     <h4 class="card-title">Event Registered Users</h4>
-					<a href="{{ route('export') }}" class="btn btn-secondary">
-						Export
-					</a>
+                    <a href="{{ route('export') }}" class="btn btn-secondary">
+                        Export
+                    </a>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
