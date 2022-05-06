@@ -12,10 +12,15 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+
+    <link rel="icon" type="image/xl-icon" href="{{ asset('theme/images/prag.png') }}">
+    <link rel="manifest" href="{{ asset('site.webmanifest') }}">
+
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-{{--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">--}}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('theme/vendor/icomoon/style.css') }}">
     <link rel="stylesheet" href="{{ asset('theme/vendor/owl.carousel.min.css') }}">
@@ -26,6 +31,7 @@
     <link href="{{ asset('theme/style.css') }}" rel="stylesheet">
 
     <style type="text/css">
+
         .border {
             border-top: 2px solid rgba(236, 239, 241, 0.07);
             height: 1px;
@@ -153,6 +159,49 @@
             left: 0px;
             opacity: 0.65;
         }
+        #lol, #loo {
+            display:inline-block;
+            overflow:hidden;
+            white-space: nowrap ;
+        }
+
+        #lol {    /* For increasing performance
+                       ID/Class should've been used.
+                       For a small demo
+                       it's okaish for now */
+            animation: showup 7s infinite;
+        }
+
+        #loo {
+            width:0px;
+            animation: reveal 7s infinite;
+        }
+
+        #loo h6 {
+            margin-left:-455px;
+            animation: slidein 7s infinite;
+        }
+        @keyframes showup {
+            0% {opacity:0;}
+            20% {opacity:1;}
+            80% {opacity:1;}
+            100% {opacity:0;}
+        }
+
+        @keyframes slidein {
+            0% { margin-left:-800px; }
+            20% { margin-left:-800px; }
+            35% { margin-left:0px; }
+            100% { margin-left:0px; }
+        }
+
+        @keyframes reveal {
+            0% {opacity:0;width:0px;}
+            20% {opacity:1;width:0px;}
+            30% {width:355px;}
+            80% {opacity:1;}
+            100% {opacity:0;width:355px;}
+        }
     </style>
 </head>
 <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
@@ -166,6 +215,20 @@
 
 <script src="{{ asset('theme/js/scripts-dist.js')}}"></script>
 <script src="{{ asset('theme/js/main.js')}}"></script>
-
+<script>
+    // // Set the date we're counting down to
+    // var countDownDate = new Date("May 26, 2022").getTime();
+    // var now = new Date().getTime();
+    //
+    // // Find the distance between now and the count down date
+    // var distance = countDownDate - now;
+    //
+    // // Time calculations for days, hours, minutes and seconds
+    // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    //
+    // // Display the result in the element with id="demo"
+    // document.getElementById("demo").innerHTML = days + " days";
+    // Update the count down every 1 second
+</script>
 </body>
 </html>

@@ -76,7 +76,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        <a target="_blank" href="#" class="btn btn-primary">Register Now!</a>
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
 
                     </div>
                 </div>
@@ -184,7 +184,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        <a target="_blank" href="#" class="btn btn-primary">Register Now!</a>
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
 
                     </div>
                 </div>
@@ -348,7 +348,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        {{--                    <a target="_blank" href="{{ url_for('register') }}" class="btn btn-primary">Register Now!</a>--}}
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
             </div>
@@ -417,7 +417,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        {{--                    <a target="_blank" href="{{ url_for('register') }}" class="btn btn-primary">Register Now!</a>--}}
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
             </div>
@@ -482,7 +482,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        {{--                    <a target="_blank" href="{{ url_for('register') }}" class="btn btn-primary">Register Now!</a>--}}
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
             </div>
@@ -568,7 +568,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        {{--                    <a target="_blank" href="{{ url_for('register') }}" class="btn btn-primary">Register Now!</a>--}}
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
             </div>
@@ -677,7 +677,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        {{--                    <a target="_blank" href="{{ url_for('register') }}"--}}
+                                            <a target="_blank" href="{{ route('eventReg') }}"
                         class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
@@ -748,7 +748,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        <a target="_blank" href="#" class="btn btn-primary">Register Now!</a>
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
             </div>
@@ -792,7 +792,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        <a target="_blank" href="#" class="btn btn-primary">Register Now!</a>
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
             </div>
@@ -868,6 +868,10 @@
                                                      alt="Pragyotsav 2022" style="max-width: 100%; height: auto;"></h1>
 
                             <h5 class="subheading"> A National Level Technical Festival.</h5>
+{{--                            <div id="lol"><h6 class="subheading">Launching in</h6></div>--}}
+{{--                            <div id="loo">--}}
+{{--                                <h6 class="subheading">in <span id="demo"></span></h6>--}}
+{{--                            </div>--}}
                         </div>
 
                     </div>
@@ -1204,7 +1208,7 @@
                     <div class="section-heading-wrap text-center mb-5">
                         <!-- designed by me... enjoy! -->
                         <div class="wrapper">
-                            <a class="cta" target="_blank" href="#">
+                            <a class="cta" target="_blank" href="{{ route('eventReg') }}">
                                 <span id="sspan">Register Online!! </span>
                                 <span id="sspan">
                                     <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1"
@@ -1389,9 +1393,9 @@
                     <div class="row justify-content-between">
 
                         <div class="col-md-6">
-                            <form method="post" class="form-outline-style-v1" action="">
+                            <form method="post" class="form-outline-style-v1" action="{{ route('contact') }}">
+                                @csrf
                                 <div class="form-group row mb-0">
-
                                     <div class="col-lg-6 form-group gsap-reveal">
                                         <label for="name">Name</label>
                                         <input name="name" type="text" class="form-control" id="name">
@@ -1402,7 +1406,7 @@
                                     </div>
                                     <div class="col-lg-12 form-group gsap-reveal">
                                         <label for="message">Write your message...</label>
-                                        <textarea name="message" id="message" cols="30" rows="7"
+                                        <textarea name="body" id="message" cols="30" rows="7"
                                                   class="form-control"></textarea>
                                     </div>
                                 </div>

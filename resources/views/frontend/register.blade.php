@@ -1,16 +1,18 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <title>Registration</title>
-    <link rel="icon" type="image/xl-icon" href="{{ url_for('static',    filename='images/prag.png') }}">
+    <link rel="icon" type="image/xl-icon" href="{{ asset('theme/images/prag.png') }}">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="{{ url_for('static',    filename='css/vendor/bootstrap.min.css') }}">
-    
-    <link rel="stylesheet" href="{{ url_for('static',    filename='css/reg.css') }}">
+    <link rel="stylesheet" href="{{ asset('theme/vendor/bootstrap.min.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('theme/reg.css') }}">
 
     <style>
         #canvas,
@@ -119,7 +121,7 @@
             max-width: 60%;
             height: auto;
 
-        
+
         }
 
         @media (max-width: 991.98px) {
@@ -138,1736 +140,1777 @@
             border: none;
             outline: none;
         }
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
     </style>
 </head>
 
 <body>
-    <div style="text-align: center; margin-bottom: -100px;">
-        <img class="titl" src="{{url_for('static', filename='images/titlelogo.webp')}}" alt="Pragyotsav 2022"
-            onerror="this.onerror=null;this.src='static/images/titlelogo.png';">
+<div style="text-align: center; margin-bottom: -100px;">
+    <img class="titl" src="{{ asset('theme/images/titlelogo.webp')}}" alt="Pragyotsav 2022"
+    >
 
-    </div>
-    <section class="ftco-section">
-        <div class="row no-gutters">
-            <div class="col-md-7">
-                <div class="contact-wrap w-100 p-md-5 p-4" style="background-color:transparent;">
-                    <h3 class="zxcv" class="mb-4">Register - To quench your fervor
-                    </h3>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <select style="background-color: #171717; font-size: large;" class="form-control" required
+</div>
+<section class="ftco-section">
+    <div class="row no-gutters">
+        <div class="col-md-7">
+            <div class="contact-wrap w-100 p-md-5 p-4" style="background-color:transparent;">
+                <h3 class="zxcv" class="mb-4">Register - To quench your fervor
+                </h3>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <select style="background-color: #171717; font-size: large;" class="form-control" required
                                 id="eventselector">
-                                <option value="" disabled selected>Select the event you wish to register for!!</option>
-                                <option value="racing">Rc Robo Racing</option>
-                                <option value="drone">Drone Racing</option>
-                                <option value="follower">Robo Line Follower</option>
-                                <option value="presentation">Technical Paper presentation</option>
-                                <option value="war">Robo War</option>
-                                <option value="soccer">Robo Soccer</option>
-                                <option value="soldering">Style Soldering</option>
-                                <option value="hardware">Hardware Assembling</option>
-                                <option value="workshop">3D-Printing WorkShop</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="idiots" id="racing" style="display: none;">
-                        <h4 class="zxcv" class="zxcv">You are registering for rc robo racing!</h4>
-                        <form method="POST" id="contactForm" enctype="multipart/form-data"  name="contactForm" action="/registerpage"
-                            class="contactForm">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>Team Leader Information </label>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="hidden" name="Event" value="Rc Robo Racing">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TeamLead" placeholder="Name"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
-                                            placeholder="Contact Number" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <select style="background-color: #171717;" class="form-control" name="TYear">
-                                            <option value="" disabled selected>Year</option>
-
-                                            <option>First year</option>
-                                            <option>Second year</option>
-                                            <option>Third year</option>
-                                            <option>Fouth year</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TDepartment"
-                                            placeholder="Department" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TCollege" placeholder="College"
-                                            required>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12" style="margin: 10px;">
-                                    <input type="file" name="file" id="bbtn1" required hidden/>
-                                    <label class="trlabel" for="bbtn1">Transaction Receipt!</label>
-                                    <span class="osen" id="chosen1">Add Screenshot!</span>
-                                </div>
-                                <div class="col-md-12">
-                                    <div>
-                                        <p style="float: left; margin-left: 15px;" class="mem11 button-21">First Teammate</p>
-
-                                        <p style="float: left; margin-left: 15px; margin-left: 15px;"
-                                            class="mem12 button-21">Second Teammate</p>
-                                    </div>
-
-                                </div>
-                                <div class="row" style="display: none;" id="mem11">
-                                    <div class="col-md-6">
-                                        <label>Team Member-I </label>
-                                    </div>
-                                    <div class="col-md-6">
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="Member-1"
-                                                placeholder="Member Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="tel" name="Phone-1" maxlength="10" class="form-control rem1"
-                                                placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <select style="background-color: #171717;" class="form-control rem1"
-                                                name="Year-1">
-                                                <option value="" disabled selected>Year</option>
-
-                                                <option>First year</option>
-                                                <option>Second year</option>
-                                                <option>Third year</option>
-                                                <option>Fouth year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="Department-1"
-                                                placeholder="Department">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="College-1"
-                                                placeholder="College">
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="col-md-12">
-                                        <label></label>
-                                        <label></label>
-                                    </div>
-                                </div>
-                                <div class="row" style="display: none;" id="mem12">
-                                    <div class="col-md-6">
-                                        <label>Team Member-II </label>
-                                    </div>
-                                    <div class="col-md-6">
-
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="Member-2"
-                                                placeholder="Member Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="tel" name="Phone-2" maxlength="10" class="form-control rem2"
-                                                placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <select style="background-color: #171717;" class="form-control rem2"
-                                                name="Year-2">
-                                                <option value="" disabled selected>Year</option>
-
-                                                <option>First year</option>
-                                                <option>Second year</option>
-                                                <option>Third year</option>
-                                                <option>Fouth year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="Department-2"
-                                                placeholder="Department">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="College-2"
-                                                placeholder="College">
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="submit" value="Register" class="button-34 ">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="idiots" id="drone" style="display: none;">
-                        <h4 class="zxcv" class="zxcv">You are registering for Drone Racing!!</h4>
-                        <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="/registerpage"
-                            class="contactForm">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>Team Leader Information </label>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="hidden" name="Event" value="Drone Racing">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-
-                                        <input type="text" class="form-control" name="TeamLead" placeholder="Name"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
-                                            placeholder="Contact Number" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <select style="background-color: #171717;" class="form-control" name="TYear">
-                                            <option value="" disabled selected>Year</option>
-
-                                            <option>First year</option>
-                                            <option>Second year</option>
-                                            <option>Third year</option>
-                                            <option>Fouth year</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TDepartment"
-                                            placeholder="Department" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TCollege" placeholder="College"
-                                            required>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <input type="file" name="file" id="bbtn2" required hidden/>
-                                    <label class="trlabel" for="bbtn2">Transaction Receipt!</label>
-                                    <span class="osen" id="chosen2">Add Screenshot!</span>
-                                </div>
-                                <div class="col-md-12">
-                                    <div>
-                                        <p style="float: left; margin-left: 15px;" class="mem21 button-21">First Teammate</p>
-                                        <p style="float: left; margin-left: 15px;" class="mem22 button-21">Second Teammate</p>
-                                    </div>
-
-                                </div>
-                                <div class="row" style="display: none;" id="mem21">
-                                    <div class="col-md-6">
-                                        <label>Team Member-I </label>
-                                    </div>
-                                    <div class="col-md-6">
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="Member-1"
-                                                placeholder="Member Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="tel" name="Phone-1" maxlength="10" class="form-control rem1"
-                                                placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <select style="background-color: #171717;" class="form-control rem1"
-                                                name="Year-1">
-                                                <option value="" disabled selected>Year</option>
-
-                                                <option>First year</option>
-                                                <option>Second year</option>
-                                                <option>Third year</option>
-                                                <option>Fouth year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="Department-1"
-                                                placeholder="Department">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="College-1"
-                                                placeholder="College">
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="col-md-12">
-                                        <label></label>
-                                        <label></label>
-                                    </div>
-                                </div>
-                                <div class="row" style="display: none;" id="mem22">
-                                    <div class="col-md-6">
-                                        <label>Team Member-II </label>
-                                    </div>
-                                    <div class="col-md-6">
-
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="Member-2"
-                                                placeholder="Member Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="tel" name="Phone-2" maxlength="10" class="form-control rem2"
-                                                placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <select style="background-color: #171717;" class="form-control rem2"
-                                                name="Year-2">
-                                                <option value="" disabled selected>Year</option>
-
-                                                <option>First year</option>
-                                                <option>Second year</option>
-                                                <option>Third year</option>
-                                                <option>Fouth year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="Department-2"
-                                                placeholder="Department">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="College-2"
-                                                placeholder="College">
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="submit" value="Register" class="button-34 ">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="idiots" id="follower" style="display: none;">
-                        <h4 class="zxcv" class="zxcv">You are registering for Robo line follower!!</h4>
-                        <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="/registerpage"
-                            class="contactForm">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>Team Leader Information </label>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="hidden" name="Event" value="Robo line follower">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-
-                                        <input type="text" class="form-control" name="TeamLead" placeholder="Name"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
-                                            placeholder="Contact Number" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <select style="background-color: #171717;" class="form-control" name="TYear">
-                                            <option value="" disabled selected>Year</option>
-
-                                            <option>First year</option>
-                                            <option>Second year</option>
-                                            <option>Third year</option>
-                                            <option>Fouth year</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TDepartment"
-                                            placeholder="Department" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TCollege" placeholder="College"
-                                            required>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <input type="file" name="file" id="bbtn3" required hidden/>
-                                    <label class="trlabel" for="bbtn3">Transaction Receipt!</label>
-                                    <span class="osen" id="chosen3">Add Screenshot!</span>
-                                </div>
-                                <div class="col-md-12">
-                                    <div>
-                                        <p style="float: left; margin-left: 15px;" class="mem31 button-21">First Teammate<p>
-                                        <p style="float: left; margin-left: 15px;" class="mem32 button-21">Second Teammate<p>
-                                    </div>
-
-                                </div>
-                                <div class="row" style="display: none;" id="mem31">
-                                    <div class="col-md-6">
-                                        <label>Team Member-I </label>
-                                    </div>
-                                    <div class="col-md-6">
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="Member-1"
-                                                placeholder="Member Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="tel" name="Phone-1" maxlength="10" class="form-control rem1"
-                                                placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <select style="background-color: #171717;" class="form-control rem1"
-                                                name="Year-1">
-                                                <option value="" disabled selected>Year</option>
-
-                                                <option>First year</option>
-                                                <option>Second year</option>
-                                                <option>Third year</option>
-                                                <option>Fouth year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="Department-1"
-                                                placeholder="Department">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="College-1"
-                                                placeholder="College">
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="col-md-12">
-                                        <label></label>
-                                        <label></label>
-                                    </div>
-                                </div>
-                                <div class="row" style="display: none;" id="mem32">
-                                    <div class="col-md-6">
-                                        <label>Team Member-II </label>
-                                    </div>
-                                    <div class="col-md-6">
-
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="Member-2"
-                                                placeholder="Member Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="tel" name="Phone-2" maxlength="10" class="form-control rem2"
-                                                placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <select style="background-color: #171717;" class="form-control rem2"
-                                                name="Year-2">
-                                                <option value="" disabled selected>Year</option>
-
-                                                <option>First year</option>
-                                                <option>Second year</option>
-                                                <option>Third year</option>
-                                                <option>Fouth year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="Department-2"
-                                                placeholder="Department">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="College-2"
-                                                placeholder="College">
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="submit" value="Register" class="button-34 ">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="idiots" id="presentation" style="display: none;">
-                        <h4 class="zxcv">You are registering for Technical Paper Presentation!!</h4>
-                        <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="/registerpage"
-                            class="contactForm">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>Team Leader Information </label>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="hidden" name="Event" value="Technical Paper Presentaion">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-
-                                        <input type="text" class="form-control" name="TeamLead" placeholder="Name"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
-                                            placeholder="Contact Number" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <select style="background-color: #171717;" class="form-control" name="TYear">
-                                            <option value="" disabled selected>Year</option>
-
-                                            <option>First year</option>
-                                            <option>Second year</option>
-                                            <option>Third year</option>
-                                            <option>Fouth year</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TDepartment"
-                                            placeholder="Department" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TCollege" placeholder="College"
-                                            required>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <input type="file" name="file" id="bbtn4" required hidden/>
-                                    <label class="trlabel" for="bbtn4">Transaction Receipt!</label>
-                                    <span class="osen" id="chosen4">Add Screenshot!</span>
-                                </div>
-                                <div class="col-md-12">
-                                    <div>
-                                        <p style="float: left; margin-left: 15px;" class="mem41 button-21">First Teammate<p>
-                                        <p style="float: left; margin-left: 15px;" class="mem42 button-21">Second Teammate<p>
-                                    </div>
-
-                                </div>
-                                <div class="row" style="display: none;" id="mem41">
-                                    <div class="col-md-6">
-                                        <label>Team Member-I </label>
-                                    </div>
-                                    <div class="col-md-6">
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="Member-1"
-                                                placeholder="Member Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="tel" name="Phone-1" maxlength="10" class="form-control rem1"
-                                                placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <select style="background-color: #171717;" class="form-control rem1"
-                                                name="Year-1">
-                                                <option value="" disabled selected>Year</option>
-
-                                                <option>First year</option>
-                                                <option>Second year</option>
-                                                <option>Third year</option>
-                                                <option>Fouth year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="Department-1"
-                                                placeholder="Department">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="College-1"
-                                                placeholder="College">
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="col-md-12">
-                                        <label></label>
-                                        <label></label>
-                                    </div>
-                                </div>
-                                <div class="row" style="display: none;" id="mem42">
-                                    <div class="col-md-6">
-                                        <label>Team Member-II </label>
-                                    </div>
-                                    <div class="col-md-6">
-
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="Member-2"
-                                                placeholder="Member Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="tel" name="Phone-2" maxlength="10" class="form-control rem2"
-                                                placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <select style="background-color: #171717;" class="form-control rem2"
-                                                name="Year-2">
-                                                <option value="" disabled selected>Year</option>
-
-                                                <option>First year</option>
-                                                <option>Second year</option>
-                                                <option>Third year</option>
-                                                <option>Fouth year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="Department-2"
-                                                placeholder="Department">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="College-2"
-                                                placeholder="College">
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="submit" value="Register" class="button-34 ">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="idiots" id="war" style="display: none;">
-                        <h4 class="zxcv">You are registering for Robo War!!</h4>
-                        <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="/registerpage"
-                            class="contactForm">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>Team Leader Information </label>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="hidden" name="Event" value="Robo war">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-
-                                        <input type="text" class="form-control" name="TeamLead" placeholder="Name"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
-                                            placeholder="Contact Number" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <select style="background-color: #171717;" class="form-control" name="TYear">
-                                            <option value="" disabled selected>Year</option>
-
-                                            <option>First year</option>
-                                            <option>Second year</option>
-                                            <option>Third year</option>
-                                            <option>Fouth year</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TDepartment"
-                                            placeholder="Department" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TCollege" placeholder="College"
-                                            required>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <input type="file" name="file" id="bbtn5" required hidden/>
-                                    <label class="trlabel" for="bbtn5">Transaction Receipt!</label>
-                                    <span class="osen" id="chosen5">Add Screenshot!</span>
-                                </div>
-                                <div class="col-md-12">
-                                    <div>
-                                        <p style="float: left; margin-left: 15px;" class="mem51 button-21">First Teammate<p>
-                                        <p style="float: left; margin-left: 15px;" class="mem52 button-21">Second Teammate<p>
-                                    </div>
-
-                                </div>
-                                <div class="row" style="display: none;" id="mem51">
-                                    <div class="col-md-6">
-                                        <label>Team Member-I </label>
-                                    </div>
-                                    <div class="col-md-6">
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="Member-1"
-                                                placeholder="Member Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="tel" name="Phone-1" maxlength="10" class="form-control rem1"
-                                                placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <select style="background-color: #171717;" class="form-control rem1"
-                                                name="Year-1">
-                                                <option value="" disabled selected>Year</option>
-
-                                                <option>First year</option>
-                                                <option>Second year</option>
-                                                <option>Third year</option>
-                                                <option>Fouth year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="Department-1"
-                                                placeholder="Department">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="College-1"
-                                                placeholder="College">
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="col-md-12">
-                                        <label></label>
-                                        <label></label>
-                                    </div>
-                                </div>
-                                <div class="row" style="display: none;" id="mem52">
-                                    <div class="col-md-6">
-                                        <label>Team Member-II </label>
-                                    </div>
-                                    <div class="col-md-6">
-
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="Member-2"
-                                                placeholder="Member Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="tel" name="Phone-2" maxlength="10" class="form-control rem2"
-                                                placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <select style="background-color: #171717;" class="form-control rem2"
-                                                name="Year-2">
-                                                <option value="" disabled selected>Year</option>
-
-                                                <option>First year</option>
-                                                <option>Second year</option>
-                                                <option>Third year</option>
-                                                <option>Fouth year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="Department-2"
-                                                placeholder="Department">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="College-2"
-                                                placeholder="College">
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="submit" value="Register" class="button-34 ">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="idiots" id="soccer" style="display: none;">
-                        <h4 class="zxcv">You are registering for Robo Soccer!!</h4>
-                        <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="/registerpage"
-                            class="contactForm">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>Team Leader Information </label>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="hidden" name="Event" value="Robo Soccer">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-
-                                        <input type="text" class="form-control" name="TeamLead" placeholder="Name"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
-                                            placeholder="Contact Number" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <select style="background-color: #171717;" class="form-control" name="TYear">
-                                            <option value="" disabled selected>Year</option>
-
-                                            <option>First year</option>
-                                            <option>Second year</option>
-                                            <option>Third year</option>
-                                            <option>Fouth year</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TDepartment"
-                                            placeholder="Department" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TCollege" placeholder="College"
-                                            required>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <input type="file" name="file" id="bbtn6" required hidden/>
-                                    <label class="trlabel" for="bbtn6">Transaction Receipt!</label>
-                                    <span class="osen" id="chosen6">Add Screenshot!</span>
-                                </div>
-                                <div class="col-md-12">
-                                    <div>
-                                        <p style="float: left; margin-left: 15px;" class="mem61 button-21">First Teammate<p>
-                                        <p style="float: left; margin-left: 15px;" class="mem62 button-21">Second Teammate<p>
-                                    </div>
-
-                                </div>
-                                <div class="row" style="display: none;" id="mem61">
-                                    <div class="col-md-6">
-                                        <label>Team Member-I </label>
-                                    </div>
-                                    <div class="col-md-6">
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="Member-1"
-                                                placeholder="Member Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="tel" name="Phone-1" maxlength="10" class="form-control rem1"
-                                                placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <select style="background-color: #171717;" class="form-control rem1"
-                                                name="Year-1">
-                                                <option value="" disabled selected>Year</option>
-
-                                                <option>First year</option>
-                                                <option>Second year</option>
-                                                <option>Third year</option>
-                                                <option>Fouth year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="Department-1"
-                                                placeholder="Department">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="College-1"
-                                                placeholder="College">
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="col-md-12">
-                                        <label></label>
-                                        <label></label>
-                                    </div>
-                                </div>
-                                <div class="row" style="display: none;" id="mem62">
-                                    <div class="col-md-6">
-                                        <label>Team Member-II </label>
-                                    </div>
-                                    <div class="col-md-6">
-
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="Member-2"
-                                                placeholder="Member Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="tel" name="Phone-2" maxlength="10" class="form-control rem2"
-                                                placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <select style="background-color: #171717;" class="form-control rem2"
-                                                name="Year-2">
-                                                <option value="" disabled selected>Year</option>
-
-                                                <option>First year</option>
-                                                <option>Second year</option>
-                                                <option>Third year</option>
-                                                <option>Fouth year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="Department-2"
-                                                placeholder="Department">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="College-2"
-                                                placeholder="College">
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="submit" value="Register" class="button-34 ">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="idiots" id="soldering" style="display: none;">
-                        <h4 class="zxcv">You are registering for Style Soldering!!</h4>
-                        <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="/registerpage"
-                            class="contactForm">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>Team Leader Information </label>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="hidden" name="Event" value="Style Soldering">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-
-                                        <input type="text" class="form-control" name="TeamLead" placeholder="Name"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
-                                            placeholder="Contact Number" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <select style="background-color: #171717;" class="form-control" name="TYear">
-                                            <option value="" disabled selected>Year</option>
-
-                                            <option>First year</option>
-                                            <option>Second year</option>
-                                            <option>Third year</option>
-                                            <option>Fouth year</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TDepartment"
-                                            placeholder="Department" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TCollege" placeholder="College"
-                                            required>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <input type="file" name="file" id="bbtn7" required hidden/>
-                                    <label class="trlabel" for="bbtn7">Transaction Receipt!</label>
-                                    <span class="osen" id="chosen7">Add Screenshot!</span>
-                                </div>
-                                <div class="col-md-12">
-                                    <div>
-                                        <p style="float: left; margin-left: 15px;" class="mem71 button-21">First Teammate<p>
-                                        <p style="float: left; margin-left: 15px;" class="mem72 button-21">Second Teammate<p>
-                                    </div>
-
-                                </div>
-                                <div class="row" style="display: none;" id="mem71">
-                                    <div class="col-md-6">
-                                        <label>Team Member-I </label>
-                                    </div>
-                                    <div class="col-md-6">
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="Member-1"
-                                                placeholder="Member Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="tel" name="Phone-1" maxlength="10" class="form-control rem1"
-                                                placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <select style="background-color: #171717;" class="form-control rem1"
-                                                name="Year-1">
-                                                <option value="" disabled selected>Year</option>
-
-                                                <option>First year</option>
-                                                <option>Second year</option>
-                                                <option>Third year</option>
-                                                <option>Fouth year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="Department-1"
-                                                placeholder="Department">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="College-1"
-                                                placeholder="College">
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="col-md-12">
-                                        <label></label>
-                                        <label></label>
-                                    </div>
-                                </div>
-                                <div class="row" style="display: none;" id="mem72">
-                                    <div class="col-md-6">
-                                        <label>Team Member-II </label>
-                                    </div>
-                                    <div class="col-md-6">
-
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="Member-2"
-                                                placeholder="Member Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="tel" name="Phone-2" maxlength="10" class="form-control rem2"
-                                                placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <select style="background-color: #171717;" class="form-control rem2"
-                                                name="Year-2">
-                                                <option value="" disabled selected>Year</option>
-
-                                                <option>First year</option>
-                                                <option>Second year</option>
-                                                <option>Third year</option>
-                                                <option>Fouth year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="Department-2"
-                                                placeholder="Department">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="College-2"
-                                                placeholder="College">
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="submit" value="Register" class="button-34 ">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="idiots" id="hardware" style="display: none;">
-                        <h4 class="zxcv">You are registering for Hardware Assembling!!</h4>
-                        <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="/registerpage"
-                            class="contactForm">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>Team Leader Information </label>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="hidden" name="Event" value="Hardware Assembling">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-
-                                        <input type="text" class="form-control" name="TeamLead" placeholder="Name"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
-                                            placeholder="Contact Number" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <select style="background-color: #171717;" class="form-control" name="TYear">
-                                            <option value="" disabled selected>Year</option>
-
-                                            <option>First year</option>
-                                            <option>Second year</option>
-                                            <option>Third year</option>
-                                            <option>Fouth year</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TDepartment"
-                                            placeholder="Department" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TCollege" placeholder="College"
-                                            required>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <input type="file" name="file" id="bbtn8" required hidden/>
-                                    <label class="trlabel" for="bbtn8">Transaction Receipt!</label>
-                                    <span class="osen" id="chosen8">Add Screenshot!</span>
-                                </div>
-                                <div class="col-md-12">
-                                    <div>
-                                        <p style="float: left; margin-left: 15px;" class="mem81 button-21">First Teammate<p>
-                                        <p style="float: left; margin-left: 15px;" class="mem82 button-21">Second Teammate<p>
-                                    </div>
-
-                                </div>
-                                <div class="row" style="display: none;" id="mem81">
-                                    <div class="col-md-6">
-                                        <label>Team Member-I </label>
-                                    </div>
-                                    <div class="col-md-6">
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="Member-1"
-                                                placeholder="Member Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="tel" name="Phone-1" maxlength="10" class="form-control rem1"
-                                                placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <select style="background-color: #171717;" class="form-control rem1"
-                                                name="Year-1">
-                                                <option value="" disabled selected>Year</option>
-
-                                                <option>First year</option>
-                                                <option>Second year</option>
-                                                <option>Third year</option>
-                                                <option>Fouth year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="Department-1"
-                                                placeholder="Department">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem1" name="College-1"
-                                                placeholder="College">
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="col-md-12">
-                                        <label></label>
-                                        <label></label>
-                                    </div>
-                                </div>
-                                <div class="row" style="display: none;" id="mem82">
-                                    <div class="col-md-6">
-                                        <label>Team Member-II </label>
-                                    </div>
-                                    <div class="col-md-6">
-
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="Member-2"
-                                                placeholder="Member Name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="tel" name="Phone-2" maxlength="10" class="form-control rem2"
-                                                placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <select style="background-color: #171717;" class="form-control rem2"
-                                                name="Year-2">
-                                                <option value="" disabled selected>Year</option>
-
-                                                <option>First year</option>
-                                                <option>Second year</option>
-                                                <option>Third year</option>
-                                                <option>Fouth year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="Department-2"
-                                                placeholder="Department">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rem2" name="College-2"
-                                                placeholder="College">
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="submit" value="Register" class="button-34 ">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="idiots" id="workshop" style="display: none;">
-                        <h4 class="zxcv">You are registering for 3D-Printing Workshop!!</h4>
-                        <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="/registerpage"
-                            class="contactForm">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label><span></span></label>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="hidden" name="Event" value="3d-printing workshop">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-
-                                        <input type="text" class="form-control" name="TeamLead" placeholder="Name"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="tel" id="phone" name="TPhone" maxlength="10" class="form-control"
-                                            placeholder="Contact Number" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <select style="background-color: #171717;" class="form-control" name="TYear">
-                                            <option value="" disabled selected>Year</option>
-
-                                            <option>First year</option>
-                                            <option>Second year</option>
-                                            <option>Third year</option>
-                                            <option>Fouth year</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TDepartment"
-                                            placeholder="Department" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="TCollege" placeholder="College"
-                                            required>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <input type="file" name="file" id="bbtn9" required hidden/>
-                                    <label class="trlabel" for="bbtn9">Transaction Receipt!</label>
-                                    <span class="osen" id="chosen9">Add Screenshot!</span>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="submit" value="Register" class="button-34 ">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                            <option value="" disabled selected>Select the event you wish to register for!!</option>
+                            <option value="racing">Rc Robo Racing</option>
+                            <option value="drone">Drone Racing</option>
+                            <option value="follower">Robo Line Follower</option>
+                            <option value="presentation">Technical Paper presentation</option>
+                            <option value="war">Robo War</option>
+                            <option value="soccer">Robo Soccer</option>
+                            <option value="soldering">Style Soldering</option>
+                            <option value="hardware">Hardware Assembling</option>
+                            <option value="workshop">3D-Printing WorkShop</option>
+                        </select>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-5 d-flex align-items-stretch" style="position: relative;">
-                <div>
-                    <figure>
-                        <img src="{{url_for('static', filename='images/eventlogo.png')}}"
-                            class="info-wrap w-100 p-5 img" style="object-fit: cover;" align="middle" />
-                        <figcaption>Upi id: phone number:</figcaption>
-                    </figure>
+                <div class="idiots" id="racing" style="display: none;">
+                    <h4 class="zxcv" class="zxcv">You are registering for rc robo racing!</h4>
+                    <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="{{ route('store.registration') }}"
+                          class="contactForm">
+                        @csrf
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Team Leader Information </label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="hidden" name="event" value="Rc Robo Racing">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TeamLead" placeholder="Name"
+                                           required value="{{ old('TeamLead') }}">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                           placeholder="Contact Number"  required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                        <option value="" disabled selected>Year</option>
+
+                                        <option>First year</option>
+                                        <option>Second year</option>
+                                        <option>Third year</option>
+                                        <option>Fouth year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TDepartment"
+                                           placeholder="Department" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TCollege" placeholder="College"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12" style="margin: 10px;">
+                                <input type="file" name="file" id="bbtn1" required hidden/>
+                                <label class="trlabel" for="bbtn1">Transaction Receipt!</label>
+                                <span class="osen" id="chosen1">Add Screenshot!</span>
+                            </div>
+                            <div class="col-md-12">
+                                <div>
+                                    <p style="float: left; margin-left: 15px;" class="mem11 button-21">First Teammate</p>
+
+                                    <p style="float: left; margin-left: 15px; margin-left: 15px;"
+                                       class="mem12 button-21">Second Teammate</p>
+                                </div>
+
+                            </div>
+                            <div class="row" style="display: none;" id="mem11">
+                                <div class="col-md-6">
+                                    <label>Team Member-I </label>
+                                </div>
+                                <div class="col-md-6">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="member_1"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone_1" maxlength="10" class="form-control rem1"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem1"
+                                                name="year_1">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="department_1"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="college_1"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-md-12">
+                                    <label></label>
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div class="row" style="display: none;" id="mem12">
+                                <div class="col-md-6">
+                                    <label>Team Member-II </label>
+                                </div>
+                                <div class="col-md-6">
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="member_2"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone_2" maxlength="10" class="form-control rem2"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem2"
+                                                name="year_2">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="department_2"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="college_2"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                     <button type="submit" class="button-34">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="idiots" id="drone" style="display: none;">
+                    <h4 class="zxcv" class="zxcv">You are registering for Drone Racing!!</h4>
+                    <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="{{ route('store.registration') }}"
+                          class="contactForm">
+                        @csrf
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Team Leader Information </label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="hidden" name="event" value="Drone Racing">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" name="TeamLead" placeholder="Name"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                           placeholder="Contact Number" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                        <option value="" disabled selected>Year</option>
+
+                                        <option>First year</option>
+                                        <option>Second year</option>
+                                        <option>Third year</option>
+                                        <option>Fouth year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TDepartment"
+                                           placeholder="Department" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TCollege" placeholder="College"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="file" name="file" id="bbtn2" required hidden/>
+                                <label class="trlabel" for="bbtn2">Transaction Receipt!</label>
+                                <span class="osen" id="chosen2">Add Screenshot!</span>
+                            </div>
+                            <div class="col-md-12">
+                                <div>
+                                    <p style="float: left; margin-left: 15px;" class="mem21 button-21">First Teammate</p>
+                                    <p style="float: left; margin-left: 15px;" class="mem22 button-21">Second Teammate</p>
+                                </div>
+
+                            </div>
+                            <div class="row" style="display: none;" id="mem21">
+                                <div class="col-md-6">
+                                    <label>Team Member-I </label>
+                                </div>
+                                <div class="col-md-6">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="member_1"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone_1" maxlength="10" class="form-control rem1"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem1"
+                                                name="year_1">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="department_1"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="college_1"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-md-12">
+                                    <label></label>
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div class="row" style="display: none;" id="mem22">
+                                <div class="col-md-6">
+                                    <label>Team Member-II </label>
+                                </div>
+                                <div class="col-md-6">
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="member_2"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone_2" maxlength="10" class="form-control rem2"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem2"
+                                                name="year_2">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="department_2"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="college_2"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                     <button type="submit" class="button-34">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="idiots" id="follower" style="display: none;">
+                    <h4 class="zxcv" class="zxcv">You are registering for Robo line follower!!</h4>
+                    <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="{{ route('store.registration') }}"
+                          class="contactForm">
+                        @csrf
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Team Leader Information </label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="hidden" name="event" value="Robo line follower">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" name="TeamLead" placeholder="Name"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                           placeholder="Contact Number" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                        <option value="" disabled selected>Year</option>
+
+                                        <option>First year</option>
+                                        <option>Second year</option>
+                                        <option>Third year</option>
+                                        <option>Fouth year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TDepartment"
+                                           placeholder="Department" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TCollege" placeholder="College"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="file" name="file" id="bbtn3" required hidden/>
+                                <label class="trlabel" for="bbtn3">Transaction Receipt!</label>
+                                <span class="osen" id="chosen3">Add Screenshot!</span>
+                            </div>
+                            <div class="col-md-12">
+                                <div>
+                                    <p style="float: left; margin-left: 15px;" class="mem31 button-21">First Teammate
+                                    <p>
+                                    <p style="float: left; margin-left: 15px;" class="mem32 button-21">Second Teammate
+                                    <p>
+                                </div>
+
+                            </div>
+                            <div class="row" style="display: none;" id="mem31">
+                                <div class="col-md-6">
+                                    <label>Team Member-I </label>
+                                </div>
+                                <div class="col-md-6">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="member_1"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone_1" maxlength="10" class="form-control rem1"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem1"
+                                                name="year_1">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="department_1"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="college_1"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-md-12">
+                                    <label></label>
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div class="row" style="display: none;" id="mem32">
+                                <div class="col-md-6">
+                                    <label>Team Member-II </label>
+                                </div>
+                                <div class="col-md-6">
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="member_2"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone_2" maxlength="10" class="form-control rem2"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem2"
+                                                name="year_2">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="department_2"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="college_2"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                     <button type="submit" class="button-34">Register</button>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="idiots" id="presentation" style="display: none;">
+                    <h4 class="zxcv">You are registering for Technical Paper Presentation!!</h4>
+                    <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="{{ route('store.registration') }}"
+                          class="contactForm">
+                        @csrf
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Team Leader Information </label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="hidden" name="event" value="Technical Paper Presentaion">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" name="TeamLead" placeholder="Name"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                           placeholder="Contact Number" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                        <option value="" disabled selected>Year</option>
+
+                                        <option>First year</option>
+                                        <option>Second year</option>
+                                        <option>Third year</option>
+                                        <option>Fouth year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TDepartment"
+                                           placeholder="Department" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TCollege" placeholder="College"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="file" name="file" id="bbtn4" required hidden/>
+                                <label class="trlabel" for="bbtn4">Transaction Receipt!</label>
+                                <span class="osen" id="chosen4">Add Screenshot!</span>
+                            </div>
+                            <div class="col-md-12">
+                                <div>
+                                    <p style="float: left; margin-left: 15px;" class="mem41 button-21">First Teammate
+                                    <p>
+                                    <p style="float: left; margin-left: 15px;" class="mem42 button-21">Second Teammate
+                                    <p>
+                                </div>
+
+                            </div>
+                            <div class="row" style="display: none;" id="mem41">
+                                <div class="col-md-6">
+                                    <label>Team Member-I </label>
+                                </div>
+                                <div class="col-md-6">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="member_1"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone_1" maxlength="10" class="form-control rem1"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem1"
+                                                name="year_1">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="department_1"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="college_1"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-md-12">
+                                    <label></label>
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div class="row" style="display: none;" id="mem42">
+                                <div class="col-md-6">
+                                    <label>Team Member-II </label>
+                                </div>
+                                <div class="col-md-6">
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="member_2"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone_2" maxlength="10" class="form-control rem2"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem2"
+                                                name="year_2">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="department_2"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="college_2"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                     <button type="submit" class="button-34">Register</button>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="idiots" id="war" style="display: none;">
+                    <h4 class="zxcv">You are registering for Robo War!!</h4>
+                    <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="{{ route('store.registration')  }}"
+                          class="contactForm">
+                        @csrf
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Team Leader Information </label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="hidden" name="event" value="Robo war">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" name="TeamLead" placeholder="Name"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                           placeholder="Contact Number" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                        <option value="" disabled selected>Year</option>
+
+                                        <option>First year</option>
+                                        <option>Second year</option>
+                                        <option>Third year</option>
+                                        <option>Fouth year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TDepartment"
+                                           placeholder="Department" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TCollege" placeholder="College"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="file" name="file" id="bbtn5" required hidden/>
+                                <label class="trlabel" for="bbtn5">Transaction Receipt!</label>
+                                <span class="osen" id="chosen5">Add Screenshot!</span>
+                            </div>
+                            <div class="col-md-12">
+                                <div>
+                                    <p style="float: left; margin-left: 15px;" class="mem51 button-21">First Teammate
+                                    <p>
+                                    <p style="float: left; margin-left: 15px;" class="mem52 button-21">Second Teammate
+                                    <p>
+                                </div>
+
+                            </div>
+                            <div class="row" style="display: none;" id="mem51">
+                                <div class="col-md-6">
+                                    <label>Team Member-I </label>
+                                </div>
+                                <div class="col-md-6">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="member_1"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone_1" maxlength="10" class="form-control rem1"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem1"
+                                                name="year_1">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="department_1"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="college_1"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-md-12">
+                                    <label></label>
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div class="row" style="display: none;" id="mem52">
+                                <div class="col-md-6">
+                                    <label>Team Member-II </label>
+                                </div>
+                                <div class="col-md-6">
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="member_2"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone_2" maxlength="10" class="form-control rem2"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem2"
+                                                name="year_2">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="department_2"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="college_2"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                     <button type="submit" class="button-34">Register</button>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="idiots" id="soccer" style="display: none;">
+                    <h4 class="zxcv">You are registering for Robo Soccer!!</h4>
+                    <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="{{ route('store.registration') }}"
+                          class="contactForm">
+                        @csrf
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Team Leader Information </label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="hidden" name="event" value="Robo Soccer">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" name="TeamLead" placeholder="Name"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                           placeholder="Contact Number" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                        <option value="" disabled selected>Year</option>
+
+                                        <option>First year</option>
+                                        <option>Second year</option>
+                                        <option>Third year</option>
+                                        <option>Fouth year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TDepartment"
+                                           placeholder="Department" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TCollege" placeholder="College"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="file" name="file" id="bbtn6" required hidden/>
+                                <label class="trlabel" for="bbtn6">Transaction Receipt!</label>
+                                <span class="osen" id="chosen6">Add Screenshot!</span>
+                            </div>
+                            <div class="col-md-12">
+                                <div>
+                                    <p style="float: left; margin-left: 15px;" class="mem61 button-21">First Teammate
+                                    <p>
+                                    <p style="float: left; margin-left: 15px;" class="mem62 button-21">Second Teammate
+                                    <p>
+                                </div>
+
+                            </div>
+                            <div class="row" style="display: none;" id="mem61">
+                                <div class="col-md-6">
+                                    <label>Team Member-I </label>
+                                </div>
+                                <div class="col-md-6">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="member_1"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone_1" maxlength="10" class="form-control rem1"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem1"
+                                                name="year_1">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="department_1"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="college_1"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-md-12">
+                                    <label></label>
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div class="row" style="display: none;" id="mem62">
+                                <div class="col-md-6">
+                                    <label>Team Member-II </label>
+                                </div>
+                                <div class="col-md-6">
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="member_2"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone_2" maxlength="10" class="form-control rem2"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem2"
+                                                name="year_2">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="department_2"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="college_2"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                     <button type="submit" class="button-34">Register</button>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="idiots" id="soldering" style="display: none;">
+                    <h4 class="zxcv">You are registering for Style Soldering!!</h4>
+                    <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="{{ route('store.registration') }}"
+                          class="contactForm">
+                        @csrf
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Team Leader Information </label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="hidden" name="event" value="Style Soldering">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" name="TeamLead" placeholder="Name"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                           placeholder="Contact Number" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                        <option value="" disabled selected>Year</option>
+
+                                        <option>First year</option>
+                                        <option>Second year</option>
+                                        <option>Third year</option>
+                                        <option>Fouth year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TDepartment"
+                                           placeholder="Department" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TCollege" placeholder="College"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="file" name="file" id="bbtn7" required hidden/>
+                                <label class="trlabel" for="bbtn7">Transaction Receipt!</label>
+                                <span class="osen" id="chosen7">Add Screenshot!</span>
+                            </div>
+                            <div class="col-md-12">
+                                <div>
+                                    <p style="float: left; margin-left: 15px;" class="mem71 button-21">First Teammate
+                                    <p>
+                                    <p style="float: left; margin-left: 15px;" class="mem72 button-21">Second Teammate
+                                    <p>
+                                </div>
+
+                            </div>
+                            <div class="row" style="display: none;" id="mem71">
+                                <div class="col-md-6">
+                                    <label>Team Member-I </label>
+                                </div>
+                                <div class="col-md-6">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="member_1"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone_1" maxlength="10" class="form-control rem1"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem1"
+                                                name="year_1">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="department_1"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="college_1"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-md-12">
+                                    <label></label>
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div class="row" style="display: none;" id="mem72">
+                                <div class="col-md-6">
+                                    <label>Team Member-II </label>
+                                </div>
+                                <div class="col-md-6">
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="member_2"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone_2" maxlength="10" class="form-control rem2"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem2"
+                                                name="year_2">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="department_2"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="college_2"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                     <button type="submit" class="button-34">Register</button>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="idiots" id="hardware" style="display: none;">
+                    <h4 class="zxcv">You are registering for Hardware Assembling!!</h4>
+                    <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="{{ route('store.registration') }}"
+                          class="contactForm">
+                        @csrf
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Team Leader Information </label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="hidden" name="event" value="Hardware Assembling">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+
+                                    <input type="text" class="form-control" name="TeamLead" placeholder="Name"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                           placeholder="Contact Number" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                        <option value="" disabled selected>Year</option>
+
+                                        <option>First year</option>
+                                        <option>Second year</option>
+                                        <option>Third year</option>
+                                        <option>Fouth year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TDepartment"
+                                           placeholder="Department" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TCollege" placeholder="College"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="file" name="file" id="bbtn8" required hidden/>
+                                <label class="trlabel" for="bbtn8">Transaction Receipt!</label>
+                                <span class="osen" id="chosen8">Add Screenshot!</span>
+                            </div>
+                            <div class="col-md-12">
+                                <div>
+                                    <p style="float: left; margin-left: 15px;" class="mem81 button-21">First Teammate
+                                    <p>
+                                    <p style="float: left; margin-left: 15px;" class="mem82 button-21">Second Teammate
+                                    <p>
+                                </div>
+
+                            </div>
+                            <div class="row" style="display: none;" id="mem81">
+                                <div class="col-md-6">
+                                    <label>Team Member-I </label>
+                                </div>
+                                <div class="col-md-6">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="member_1"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone_1" maxlength="10" class="form-control rem1"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem1"
+                                                name="year_1">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="department_1"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem1" name="college_1"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-md-12">
+                                    <label></label>
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div class="row" style="display: none;" id="mem82">
+                                <div class="col-md-6">
+                                    <label>Team Member-II </label>
+                                </div>
+                                <div class="col-md-6">
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="member_2"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone_2" maxlength="10" class="form-control rem2"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem2"
+                                                name="year_2">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="department_2"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem2" name="college_2"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                     <button type="submit" class="button-34">Register</button>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="idiots" id="workshop" style="display: none;">
+                    <h4 class="zxcv">You are registering for 3D-Printing Workshop!!</h4>
+                    <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="{{ route('store.registration') }}"
+                          class="contactForm">
+                        @csrf
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label><span></span></label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="hidden" name="event" value="3d-printing workshop">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TeamLead" placeholder="Name"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                           placeholder="Contact Number" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                        <option value="" disabled selected>Year</option>
+
+                                        <option>First year</option>
+                                        <option>Second year</option>
+                                        <option>Third year</option>
+                                        <option>Fouth year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TDepartment"
+                                           placeholder="Department" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TCollege" placeholder="College"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="file" name="file" id="bbtn9" required hidden/>
+                                <label class="trlabel" for="bbtn9">Transaction Receipt!</label>
+                                <span class="osen" id="chosen9">Add Screenshot!</span>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button type="submit" class="button-34">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="col-md-5 d-flex align-items-stretch" style="position: relative;">
+            <div
+                <figure>
+                    <img src="{{ asset('theme/qrcode.png')}}"
+                         class="info-wrap sm:pl-5 img" style=" height: 50%; width: auto;" align="middle"/>
+                    <figcaption class="text-center">Upi id: swetha060701@oksbi 
+                        <br>
+                         Phone number : 7358866388</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/popper.js')}}"></script>
-    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/jquery.validate.min.js')}}"></script>
-    <script src="{{url_for('static', filename='js/main.js')}}"></script>
-    <script>
-        $(function () {
-            $('#eventselector').change(function () {
-                $('.idiots').hide();
-                $('#' + $(this).val()).show();
-            });
+<script src="{{ asset('theme/js/jquery.min.js')}}"></script>
+<script src="{{ asset('theme/js/popper.js')}}"></script>
+<script src="{{ asset('theme/js/bootstrap.min.js')}}"></script>
+<script src="{{ asset('theme/js/jquery.validate.min.js')}}"></script>
+<script src="{{ asset('theme/js/main.js')}}"></script>
+<script>
+    $(function () {
+        $('#eventselector').change(function () {
+            $('.idiots').hide();
+            $('#' + $(this).val()).show();
         });
-        $(document).ready(function () {
-            $(".mem11").click(function () {
-                $("#mem11").toggle();
+    });
+    $(document).ready(function () {
+        $(".mem11").click(function () {
+            $("#mem11").toggle();
 
-                $(".rem1").val(null);
+            $(".rem1").val(null);
 
-                if ($(this).text() == "First Teammate")
-                    $(this).text("Remove Teammate")
-                else
-                    $(this).text("First Teammate");
+            if ($(this).text() == "First Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("First Teammate");
 
-            });
-            $(".mem12").click(function () {
-                $("#mem12").toggle();
-                $(".rem2").val(null);
-                if ($(this).text() == "Second Teammate")
-                    $(this).text("Remove Teammate")
-                else
-                    $(this).text("Second Teammate");
-
-            });
-
-            $(".mem21").click(function () {
-                $("#mem21").toggle();
-
-                $(".rem1").val(null);
-
-                if ($(this).text() == "First Teammate")
-                    $(this).text("Remove Teammate")
-                else
-                    $(this).text("First Teammate");
-
-            });
-            $(".mem22").click(function () {
-                $("#mem22").toggle();
-                $(".rem2").val(null);
-                if ($(this).text() == "Second Teammate")
-                    $(this).text("Remove Teammate")
-                else
-                    $(this).text("Second Teammate");
-
-            });
-            $(".mem31").click(function () {
-                $("#mem31").toggle();
-
-                $(".rem1").val(null);
-
-                if ($(this).text() == "First Teammate")
-                    $(this).text("Remove Teammate")
-                else
-                    $(this).text("First Teammate");
-
-            });
-            $(".mem32").click(function () {
-                $("#mem32").toggle();
-                $(".rem2").val(null);
-                if ($(this).text() == "Second Teammate")
-                    $(this).text("Remove Teammate")
-                else
-                    $(this).text("Second Teammate");
-
-            });
-            $(".mem41").click(function () {
-                $("#mem41").toggle();
-
-                $(".rem1").val(null);
-
-                if ($(this).text() == "First Teammate")
-                    $(this).text("Remove Teammate")
-                else
-                    $(this).text("First Teammate");
-
-            });
-            $(".mem42").click(function () {
-                $("#mem42").toggle();
-                $(".rem2").val(null);
-                if ($(this).text() == "Second Teammate")
-                    $(this).text("Remove Teammate")
-                else
-                    $(this).text("Second Teammate");
-
-            });
-
-            $(".mem51").click(function () {
-                $("#mem51").toggle();
-
-                $(".rem1").val(null);
-
-                if ($(this).text() == "First Teammate")
-                    $(this).text("Remove Teammate")
-                else
-                    $(this).text("First Teammate");
-
-            });
-            $(".mem52").click(function () {
-                $("#mem52").toggle();
-                $(".rem2").val(null);
-                if ($(this).text() == "Second Teammate")
-                    $(this).text("Remove Teammate")
-                else
-                    $(this).text("Second Teammate");
-
-            });
-            $(".mem61").click(function () {
-                $("#mem61").toggle();
-
-                $(".rem1").val(null);
-
-                if ($(this).text() == "First Teammate")
-                    $(this).text("Remove Teammate")
-                else
-                    $(this).text("First Teammate");
-
-            });
-            $(".mem62").click(function () {
-                $("#mem62").toggle();
-                $(".rem2").val(null);
-                if ($(this).text() == "Second Teammate")
-                    $(this).text("Remove Teammate")
-                else
-                    $(this).text("Second Teammate");
-
-            });
-
-            $(".mem71").click(function () {
-                $("#mem71").toggle();
-
-                $(".rem1").val(null);
-
-                if ($(this).text() == "First Teammate")
-                    $(this).text("Remove Teammate")
-                else
-                    $(this).text("First Teammate");
-
-            });
-            $(".mem72").click(function () {
-                $("#mem72").toggle();
-                $(".rem2").val(null);
-                if ($(this).text() == "Second Teammate")
-                    $(this).text("Remove Teammate")
-                else
-                    $(this).text("Second Teammate");
-
-            });
-
-            $(".mem81").click(function () {
-                $("#mem81").toggle();
-
-                $(".rem1").val(null);
-
-                if ($(this).text() == "First Teammate")
-                    $(this).text("Remove Teammate")
-                else
-                    $(this).text("First Teammate");
-
-            });
-            $(".mem82").click(function () {
-                $("#mem82").toggle();
-                $(".rem2").val(null);
-                if ($(this).text() == "Second Teammate")
-                    $(this).text("Remove Teammate")
-                else
-                    $(this).text("Second Teammate");
-
-            });
-            $('#bbtn1').change(function () {
-                $('#chosen1').text( $(this).val().split('\\').pop());              
-                
-            });
-            $('#bbtn2').change(function () {
-                $('#chosen2').text( $(this).val().split('\\').pop());               
-            
-            });
-            $('#bbtn3').change(function () {
-                $('#chosen3').text( $(this).val().split('\\').pop());               
-                
-            });$('#bbtn4').change(function () {
-                $('#chosen4').text( $(this).val().split('\\').pop());               
-                
-            });$('#bbtn5').change(function () {
-                $('#chosen5').text( $(this).val().split('\\').pop());               
-                
-            });$('#bbtn6').change(function () {
-                $('#chosen6').text( $(this).val().split('\\').pop());               
-                
-            });$('#bbtn7').change(function () {
-                $('#chosen7').text( $(this).val().split('\\').pop());               
-                
-            });$('#bbtn8').change(function () {
-                $('#chosen8').text( $(this).val().split('\\').pop());               
-                
-            });$('#bbtn9').change(function () {
-                $('#chosen9').text( $(this).val().split('\\').pop());               
-                
-            });
-
-
+        });
+        $(".mem12").click(function () {
+            $("#mem12").toggle();
+            $(".rem2").val(null);
+            if ($(this).text() == "Second Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("Second Teammate");
 
         });
 
-    </script>
+        $(".mem21").click(function () {
+            $("#mem21").toggle();
+
+            $(".rem1").val(null);
+
+            if ($(this).text() == "First Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("First Teammate");
+
+        });
+        $(".mem22").click(function () {
+            $("#mem22").toggle();
+            $(".rem2").val(null);
+            if ($(this).text() == "Second Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("Second Teammate");
+
+        });
+        $(".mem31").click(function () {
+            $("#mem31").toggle();
+
+            $(".rem1").val(null);
+
+            if ($(this).text() == "First Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("First Teammate");
+
+        });
+        $(".mem32").click(function () {
+            $("#mem32").toggle();
+            $(".rem2").val(null);
+            if ($(this).text() == "Second Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("Second Teammate");
+
+        });
+        $(".mem41").click(function () {
+            $("#mem41").toggle();
+
+            $(".rem1").val(null);
+
+            if ($(this).text() == "First Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("First Teammate");
+
+        });
+        $(".mem42").click(function () {
+            $("#mem42").toggle();
+            $(".rem2").val(null);
+            if ($(this).text() == "Second Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("Second Teammate");
+
+        });
+
+        $(".mem51").click(function () {
+            $("#mem51").toggle();
+
+            $(".rem1").val(null);
+
+            if ($(this).text() == "First Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("First Teammate");
+
+        });
+        $(".mem52").click(function () {
+            $("#mem52").toggle();
+            $(".rem2").val(null);
+            if ($(this).text() == "Second Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("Second Teammate");
+
+        });
+        $(".mem61").click(function () {
+            $("#mem61").toggle();
+
+            $(".rem1").val(null);
+
+            if ($(this).text() == "First Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("First Teammate");
+
+        });
+        $(".mem62").click(function () {
+            $("#mem62").toggle();
+            $(".rem2").val(null);
+            if ($(this).text() == "Second Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("Second Teammate");
+
+        });
+
+        $(".mem71").click(function () {
+            $("#mem71").toggle();
+
+            $(".rem1").val(null);
+
+            if ($(this).text() == "First Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("First Teammate");
+
+        });
+        $(".mem72").click(function () {
+            $("#mem72").toggle();
+            $(".rem2").val(null);
+            if ($(this).text() == "Second Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("Second Teammate");
+
+        });
+
+        $(".mem81").click(function () {
+            $("#mem81").toggle();
+
+            $(".rem1").val(null);
+
+            if ($(this).text() == "First Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("First Teammate");
+
+        });
+        $(".mem82").click(function () {
+            $("#mem82").toggle();
+            $(".rem2").val(null);
+            if ($(this).text() == "Second Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("Second Teammate");
+
+        });
+        $('#bbtn1').change(function () {
+            $('#chosen1').text($(this).val().split('\\').pop());
+
+        });
+        $('#bbtn2').change(function () {
+            $('#chosen2').text($(this).val().split('\\').pop());
+
+        });
+        $('#bbtn3').change(function () {
+            $('#chosen3').text($(this).val().split('\\').pop());
+
+        });
+        $('#bbtn4').change(function () {
+            $('#chosen4').text($(this).val().split('\\').pop());
+
+        });
+        $('#bbtn5').change(function () {
+            $('#chosen5').text($(this).val().split('\\').pop());
+
+        });
+        $('#bbtn6').change(function () {
+            $('#chosen6').text($(this).val().split('\\').pop());
+
+        });
+        $('#bbtn7').change(function () {
+            $('#chosen7').text($(this).val().split('\\').pop());
+
+        });
+        $('#bbtn8').change(function () {
+            $('#chosen8').text($(this).val().split('\\').pop());
+
+        });
+        $('#bbtn9').change(function () {
+            $('#chosen9').text($(this).val().split('\\').pop());
+
+        });
+
+
+    });
+
+</script>
 
 </body>
 
