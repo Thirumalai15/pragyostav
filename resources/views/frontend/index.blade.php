@@ -376,8 +376,8 @@
                                         </li>
                                         <li>Registration fee:
                                             <ol>
-                                                <li>For IETE members : 200 rupees</li>
-                                                <li>For Non-IETE members: 400 rupees</li>
+                                                <li>For IETE members : 150 rupees</li>
+                                                <li>For Non-IETE members: 300 rupees</li>
                                             </ol>
                                         </li>
                                     </ol>
@@ -392,14 +392,14 @@
                                         <li>Round 1 is for qualifier and Round 2 is the final round.</li>
                                         <li>Round 1 => The participants need to assemble the disassembled keyboard.
                                         </li>
-                                        <li>Round 2 => The participants need to assemble the disassembled Bluetooth speaker.
+                                        <li>Round 2 => The participants need to assemble the disassembled Joystick.
                                         </li>
 
                                         <li> Teams will be qualified for Round 2 based on Time, how they have assembled
                                             and on how good it works.
                                         </li>
                                         <li>The team which does it with minimum duration will be selected to next round ,and in round two the winners will be finalized.</li>
-                                        <li>In the final round both the winner and runner will be selected and cash
+                                        <li>In the final round both the winner selected and cash
                                             prize will be given.
                                         </li>
 
@@ -453,9 +453,8 @@
                                     <ol>
                                         <li>This is a team event, each team will comprise of 2 Participants.</li>
                                         <li>Each team will have 5 minutes to complete the given design.</li>
-                                        <li>Participants are required to keep their gloves on throughout the event for
-                                            their own safety.
-                                        </li>
+                                        <li>All the required instruments for soldering will be provided. </li>
+                                        <li>Participants can bring gloves for their own safety purpose.</li>
                                         <li>Fume removal fans will be provided and should be kept switched on during the
                                             course of the event.
                                         </li>
@@ -677,8 +676,8 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                                            <a target="_blank" href="{{ route('eventReg') }}"
-                        class="btn btn-primary">Register Now!</a>
+                        <a target="_blank" href="{{ route('eventReg') }}"
+                           class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
             </div>
@@ -825,7 +824,7 @@
 
                             <ul class="site-nav-ul js-clone-nav d-none d-lg-inline-block">
 
-                                <li class="has-children">
+                                <li>
                                     <a href="#home-section" class="nav-link">Home</a>
                                 </li>
 
@@ -838,9 +837,14 @@
                             </ul>
 
                             <ul class="site-nav-ul-none-onepage text-left d-inline-block d-lg-none">
-                                <li><a href="#" class="js-menu-toggle"><img
-                                                src="{{ asset('theme/images/menuicon.jpg') }}"
-                                                style="width: 20px; height: 20px;filter: invert(100%)"></a></li>
+                                <li><a href="#" class="js-menu-toggle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffc300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <line x1="4" y1="6" x2="20" y2="6" />
+                                            <line x1="4" y1="12" x2="20" y2="12" />
+                                            <line x1="4" y1="18" x2="20" y2="18" />
+                                        </svg>
+                                    </a></li>
                             </ul>
 
                         </div>
@@ -868,10 +872,10 @@
                                                      alt="Pragyotsav 2022" style="max-width: 100%; height: auto;"></h1>
 
                             <h5 class="subheading"> A National Level Technical Festival.</h5>
-{{--                            <div id="lol"><h6 class="subheading">Launching in</h6></div>--}}
-{{--                            <div id="loo">--}}
-{{--                                <h6 class="subheading">in <span id="demo"></span></h6>--}}
-{{--                            </div>--}}
+                            {{--                            <div id="lol"><h6 class="subheading">Launching in</h6></div>--}}
+                            {{--                            <div id="loo">--}}
+                            {{--                                <h6 class="subheading">in <span id="demo"></span></h6>--}}
+                            {{--                            </div>--}}
                         </div>
 
                     </div>
@@ -1124,7 +1128,7 @@
                                         <img src="{{ asset('theme/images/presentation.jpg')}}" alt="Icon"
                                              width="100%">
                                     </div>
-                                    <h3 class="zxcv">Technical Paper Presentaion</h3>
+                                    <h3 class="zxcv">Technical Paper Presentation</h3>
                                     <p>Showcase your research ideas as paper presentation. This paper presentation
                                         provides a platform for young minds to be
                                         the technology changer with their ideas and just let it flow through your words.

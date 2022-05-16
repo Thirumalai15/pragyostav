@@ -17,6 +17,9 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
     'admin_mail' => 'eec.ieteforum@gmail.com', // TODO change this after deploying
+    
+    'iete_member_fee' => '150',
+    'non_iete_member_fee' => '300',
     /*
     |--------------------------------------------------------------------------
     | Application Environment

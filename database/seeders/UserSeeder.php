@@ -26,4 +26,6 @@ class UserSeeder extends Seeder
             'updated_at' => Carbon::now()
         ]);
     }
+//User: pragyots_admin
+    //Database: pragyots_db
 }
