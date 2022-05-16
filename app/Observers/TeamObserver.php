@@ -29,6 +29,8 @@ class TeamObserver
     {
         $mail = new TeamLeadMail($team);
 
+// TODO : Add Date to emails 
+
         Mail::to($team->team_lead_email)->send($mail);
     }
 

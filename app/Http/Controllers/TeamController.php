@@ -10,8 +10,9 @@ class TeamController extends Controller
 {
     public function store(Request $request)
     {
+ 
 
-
+    
         $team = new Team;
         $team->reg_id = Str::random('7');
         $team->event_name = $request->event;
@@ -23,16 +24,25 @@ class TeamController extends Controller
         $team->team_lead_department = $request->TDepartment;
         $team->team_lead_college = $request->TCollege;
         $team->team_lead_college = $request->TCollege;
+       
         $team->member_1 = $request->member_1;
         $team->member_1_phone = $request->phone_1;
         $team->member_1_college = $request->college_1;
         $team->member_1_year = $request->year_1;
         $team->member_1_department = $request->department_1;
+
         $team->member_2 = $request->member_2;
         $team->member_2_phone = $request->phone_2;
         $team->member_2_college = $request->college_2;
         $team->member_2_year = $request->year_2;
         $team->member_2_department = $request->department_2;
+        
+        $team->member_3 = $request->member_3;
+        $team->member_3_phone = $request->phone_3;
+        $team->member_3_college = $request->college_3;
+        $team->member_3_year = $request->year_3;
+        $team->member_3_department = $request->department_3;
+
         $team->image = '';
         $team->save();
 

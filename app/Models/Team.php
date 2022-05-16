@@ -29,6 +29,11 @@ class Team extends Model
         'member_2_year',
         'member_2_department',
         'member_2_college',
+        'member_3',
+        'member_3_phone',
+        'member_3_year',
+        'member_3_department',
+        'member_3_college',
         'attendance', // 0 => for absent , 1 => present
         'image'
     ];

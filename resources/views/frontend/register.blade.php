@@ -180,6 +180,9 @@
                             <option value="soldering">Style Soldering</option>
                             <option value="hardware">Hardware Assembling</option>
                             <option value="workshop">3D-Printing WorkShop</option>
+                            <option value="vr-workshop">Virtual Reality WorkShop</option>
+                            <option value="ai-workshop">Artifical Intelligence WorkShop</option>
+                            <option value="all-workshop">Register for all three workshops</option>
                         </select>
                     </div>
                 </div>
@@ -240,7 +243,8 @@
                             </div>
 
                             <div class="col-md-12" style="margin: 10px;">
-                                <input type="file" name="file" id="bbtn1" required hidden/>
+                            <p class="mb-n3">A registration fee of ₹250 is applicable.</p>
+                                <input tye="file" name="file" id="bbtn1" required hidden/>
                                 <label class="trlabel" for="bbtn1">Transaction Receipt!</label>
                                 <span class="osen" id="chosen1">Add Screenshot!</span>
                             </div>
@@ -418,6 +422,7 @@
                             </div>
 
                             <div class="col-md-12">
+                            <p class="mb-n3">A registration fee of ₹300 is applicable.</p>
                                 <input type="file" name="file" id="bbtn2" required hidden/>
                                 <label class="trlabel" for="bbtn2">Transaction Receipt!</label>
                                 <span class="osen" id="chosen2">Add Screenshot!</span>
@@ -593,16 +598,16 @@
                             </div>
 
                             <div class="col-md-12">
+                            <p class="mb-n3">A registration fee of ₹350 is applicable.</p>
                                 <input type="file" name="file" id="bbtn3" required hidden/>
                                 <label class="trlabel" for="bbtn3">Transaction Receipt!</label>
                                 <span class="osen" id="chosen3">Add Screenshot!</span>
                             </div>
                             <div class="col-md-12">
                                 <div>
-                                    <p style="float: left; margin-left: 15px;" class="mem31 button-21">First Teammate
-                                    <p>
-                                    <p style="float: left; margin-left: 15px;" class="mem32 button-21">Second Teammate
-                                    <p>
+                                    <p style="float: left; margin-left: 15px;" class="mem31 button-21">First Teammate<p>
+                                    <p style="float: left; margin-left: 15px;" class="mem32 button-21">Second Teammate<p>
+                                    <p style="float: left; margin-left: 15px;" class="mem33 button-21">Third Teammate<p>
                                 </div>
 
                             </div>
@@ -705,6 +710,54 @@
 
 
                             </div>
+                            <div class="row" style="display: none;" id="mem33">
+                                <div class="col-md-6">
+                                    <label>Team Member-III </label>
+                                </div>
+                                <div class="col-md-6">
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem3" name="member_3"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="tel"  pattern="[0-9]{10}" name="phone_3" maxlength="10" class="form-control rem3"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem3"
+                                                name="year_3">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem3" name="department_3"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem3" name="college_3"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+
+
+                            </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                      <button type="submit" class="button-34">Register</button>
@@ -772,6 +825,7 @@
                             </div>
 
                             <div class="col-md-12">
+                            <p class="mb-n3">A registration fee of ₹150 is applicable.</p>
                                 <input type="file" name="file" id="bbtn4" required hidden/>
                                 <label class="trlabel" for="bbtn4">Transaction Receipt!</label>
                                 <span class="osen" id="chosen4">Add Screenshot!</span>
@@ -951,16 +1005,16 @@
                             </div>
 
                             <div class="col-md-12">
+                            <p class="mb-n3">A registration fee of ₹300 is applicable.</p>
                                 <input type="file" name="file" id="bbtn5" required hidden/>
                                 <label class="trlabel" for="bbtn5">Transaction Receipt!</label>
                                 <span class="osen" id="chosen5">Add Screenshot!</span>
                             </div>
                             <div class="col-md-12">
                                 <div>
-                                    <p style="float: left; margin-left: 15px;" class="mem51 button-21">First Teammate
-                                    <p>
-                                    <p style="float: left; margin-left: 15px;" class="mem52 button-21">Second Teammate
-                                    <p>
+                                    <p style="float: left; margin-left: 15px;" class="mem51 button-21">First Teammate<p>
+                                    <p style="float: left; margin-left: 15px;" class="mem52 button-21">Second Teammate<p>
+                                    <p style="float: left; margin-left: 15px;" class="mem53 button-21">Third Teammate<p>
                                 </div>
 
                             </div>
@@ -1063,6 +1117,54 @@
 
 
                             </div>
+                            <div class="row" style="display: none;" id="mem53">
+                                <div class="col-md-6">
+                                    <label>Team Member-III </label>
+                                </div>
+                                <div class="col-md-6">
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem3" name="member_3"
+                                               placeholder="Member Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="tel"  pattern="[0-9]{10}" name="phone_3" maxlength="10" class="form-control rem3"
+                                               placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select style="background-color: #171717;" class="form-control rem33"
+                                                name="year_3">
+                                            <option value="" disabled selected>Year</option>
+
+                                            <option>First year</option>
+                                            <option>Second year</option>
+                                            <option>Third year</option>
+                                            <option>Fouth year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem3" name="department_3"
+                                               placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control rem3" name="college_3"
+                                               placeholder="College">
+                                    </div>
+                                </div>
+
+
+                            </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                      <button type="submit" class="button-34">Register</button>
@@ -1130,6 +1232,7 @@
                             </div>
 
                             <div class="col-md-12">
+                            <p class="mb-n3">A registration fee of ₹250 is applicable.</p>
                                 <input type="file" name="file" id="bbtn6" required hidden/>
                                 <label class="trlabel" for="bbtn6">Transaction Receipt!</label>
                                 <span class="osen" id="chosen6">Add Screenshot!</span>
@@ -1138,8 +1241,7 @@
                                 <div>
                                     <p style="float: left; margin-left: 15px;" class="mem61 button-21">First Teammate
                                     <p>
-                                    <p style="float: left; margin-left: 15px;" class="mem62 button-21">Second Teammate
-                                    <p>
+        
                                 </div>
 
                             </div>
@@ -1194,7 +1296,7 @@
                                     <label></label>
                                 </div>
                             </div>
-                            <div class="row" style="display: none;" id="mem62">
+                           {{-- <div class="row" style="display: none;" id="mem62">
                                 <div class="col-md-6">
                                     <label>Team Member-II </label>
                                 </div>
@@ -1242,6 +1344,7 @@
 
 
                             </div>
+                            --}}
                             <div class="col-md-12">
                                 <div class="form-group">
                                      <button type="submit" class="button-34">Register</button>
@@ -1309,6 +1412,7 @@
                             </div>
 
                             <div class="col-md-12">
+                            <p class="mb-n3">A registration fee of ₹250 is applicable.</p>
                                 <input type="file" name="file" id="bbtn7" required hidden/>
                                 <label class="trlabel" for="bbtn7">Transaction Receipt!</label>
                                 <span class="osen" id="chosen7">Add Screenshot!</span>
@@ -1316,9 +1420,7 @@
                             <div class="col-md-12">
                                 <div>
                                     <p style="float: left; margin-left: 15px;" class="mem71 button-21">First Teammate
-                                    <p>
-                                    <p style="float: left; margin-left: 15px;" class="mem72 button-21">Second Teammate
-                                    <p>
+                                    <p>                               
                                 </div>
 
                             </div>
@@ -1373,7 +1475,7 @@
                                     <label></label>
                                 </div>
                             </div>
-                            <div class="row" style="display: none;" id="mem72">
+                            <!-- <div class="row" style="display: none;" id="mem72">
                                 <div class="col-md-6">
                                     <label>Team Member-II </label>
                                 </div>
@@ -1420,7 +1522,7 @@
                                 </div>
 
 
-                            </div>
+                            </div> -->
                             <div class="col-md-12">
                                 <div class="form-group">
                                      <button type="submit" class="button-34">Register</button>
@@ -1488,6 +1590,7 @@
                             </div>
 
                             <div class="col-md-12">
+                            <p class="mb-n3">A registration fee of ₹200 is applicable.</p>
                                 <input type="file" name="file" id="bbtn8" required hidden/>
                                 <label class="trlabel" for="bbtn8">Transaction Receipt!</label>
                                 <span class="osen" id="chosen8">Add Screenshot!</span>
@@ -1496,8 +1599,7 @@
                                 <div>
                                     <p style="float: left; margin-left: 15px;" class="mem81 button-21">First Teammate
                                     <p>
-                                    <p style="float: left; margin-left: 15px;" class="mem82 button-21">Second Teammate
-                                    <p>
+                                
                                 </div>
 
                             </div>
@@ -1666,9 +1768,217 @@
                             </div>
 
                             <div class="col-md-12">
+                            <p class="mb-n3">A registration fee of ₹500 is applicable.</p>
                                 <input type="file" name="file" id="bbtn9" required hidden/>
                                 <label class="trlabel" for="bbtn9">Transaction Receipt!</label>
                                 <span class="osen" id="chosen9">Add Screenshot!</span>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button type="submit" class="button-34">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="idiots" id="vr-workshop" style="display: none;">
+                    <h4 class="zxcv">You are registering for Virtual Reality Workshop!!</h4>
+                    <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="{{ route('store.registration') }}"
+                          class="contactForm">
+                        @csrf
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label><span></span></label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="hidden" name="event" value="Virtual Reality workshop">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TeamLead" placeholder="Name"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="tel"  pattern="[0-9]{10}" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                           placeholder="Contact Number" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                        <option value="" disabled selected>Year</option>
+
+                                        <option>First year</option>
+                                        <option>Second year</option>
+                                        <option>Third year</option>
+                                        <option>Fouth year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TDepartment"
+                                           placeholder="Department" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TCollege" placeholder="College"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                            <p class="mb-n3">A registration fee of ₹500 is applicable.</p>
+                                <input type="file" name="file" id="bbtn10" required hidden/>
+                                <label class="trlabel" for="bbtn10">Transaction Receipt!</label>
+                                <span class="osen" id="chosen10">Add Screenshot!</span>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button type="submit" class="button-34">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="idiots" id="ai-workshop" style="display: none;">
+                    <h4 class="zxcv">You are registering for Artificial Intelligence Workshop!!</h4>
+                    <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="{{ route('store.registration') }}"
+                          class="contactForm">
+                        @csrf
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label><span></span></label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="hidden" name="event" value="Artificial Intelligence workshop">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TeamLead" placeholder="Name"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="tel"  pattern="[0-9]{10}" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                           placeholder="Contact Number" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                        <option value="" disabled selected>Year</option>
+
+                                        <option>First year</option>
+                                        <option>Second year</option>
+                                        <option>Third year</option>
+                                        <option>Fouth year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TDepartment"
+                                           placeholder="Department" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TCollege" placeholder="College"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                            <p class="mb-n3">A registration fee of ₹500 is applicable.</p>
+                                <input type="file" name="file" id="bbtn11" required hidden/>
+                                <label class="trlabel" for="bbtn11">Transaction Receipt!</label>
+                                <span class="osen" id="chosen11">Add Screenshot!</span>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button type="submit" class="button-34">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="idiots" id="all-workshop" style="display: none;">
+                    <h4 class="zxcv">Register for all three workshops(3d-printing, Artificial Intelligence, Virtual Reality</h4>
+                    <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="{{ route('store.registration') }}"
+                          class="contactForm">
+                        @csrf
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label><span></span></label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="hidden" name="event" value="All workshops">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TeamLead" placeholder="Name"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control inp" name="TEmail" placeholder="Email"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="tel"  pattern="[0-9]{10}" id="phone" name="TPhone" maxlength="10" class="form-control"
+                                           placeholder="Contact Number" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                        <option value="" disabled selected>Year</option>
+
+                                        <option>First year</option>
+                                        <option>Second year</option>
+                                        <option>Third year</option>
+                                        <option>Fouth year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TDepartment"
+                                           placeholder="Department" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="TCollege" placeholder="College"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                            <p class="mb-n3">A registration fee of ₹1200 is applicable.</p>
+                                <input type="file" name="file" id="bbtn12" required hidden/>
+                                <label class="trlabel" for="bbtn12">Transaction Receipt!</label>
+                                <span class="osen" id="chosen12">Add Screenshot!</span>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
@@ -1768,6 +2078,15 @@
                 $(this).text("Second Teammate");
 
         });
+        $(".mem33").click(function () {
+            $("#mem33").toggle();
+            $(".rem3").val(null);
+            if ($(this).text() == "Third Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("Third Teammate");
+
+        });
         $(".mem41").click(function () {
             $("#mem41").toggle();
 
@@ -1807,6 +2126,15 @@
                 $(this).text("Remove Teammate")
             else
                 $(this).text("Second Teammate");
+
+        });
+        $(".mem53").click(function () {
+            $("#mem53").toggle();
+            $(".rem3").val(null);
+            if ($(this).text() == "Third Teammate")
+                $(this).text("Remove Teammate")
+            else
+                $(this).text("Third Teammate");
 
         });
         $(".mem61").click(function () {
@@ -1905,6 +2233,18 @@
         });
         $('#bbtn9').change(function () {
             $('#chosen9').text($(this).val().split('\\').pop());
+
+        });
+        $('#bbtn10').change(function () {
+            $('#chosen10').text($(this).val().split('\\').pop());
+
+        });
+        $('#bbtn11').change(function () {
+            $('#chosen11').text($(this).val().split('\\').pop());
+
+        });
+        $('#bbtn12').change(function () {
+            $('#chosen12').text($(this).val().split('\\').pop());
 
         });
 

@@ -23,11 +23,7 @@
                                         <li>Register online for the event and provide the Registration Id on the day of
                                             event.
                                         </li>
-                                        <li>Registration fee:
-                                            <ol>
-                                                <li>For IETE members : 200 rupees</li>
-                                                <li>For Non-IETE members: 400 rupees</li>
-                                            </ol>
+                                        <li>A registration fee of ₹250 is applicable.
                                         </li>
                                     </ol>
                                     <h5 class="zxcv">Rules :</h5>
