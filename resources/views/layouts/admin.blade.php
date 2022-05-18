@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Atlantis Lite - Bootstrap 4 Admin Dashboard</title>
+	<title>Pragyotsav | Admin Panel</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="../assets/img/icon.ico" type="image/x-icon"/>
+	<link rel="icon" type="image/xl-icon" href="{{ asset('theme/images/prag.png') }}">
+	<link rel="manifest" href="{{ asset('site.webmanifest') }}">
 
 	<!-- Fonts and icons -->
 	<script src="../assets/js/plugin/webfont/webfont.min.js"></script>
@@ -36,7 +37,9 @@
  <footer class="footer">
 	 <div class="container">
 		 <div class="copyright ml-auto">
-			 Made with ♥ by Rithish Kumar and Thirumalai 😎
+			 Made with <svg xmlns="http://www.w3.org/2000/svg" style="width: 1rem; height: 1rem" viewBox="0 0 20 20" fill="red">
+				 <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+			 </svg> by Rithish Kumar and Thirumalai 😎
 		 </div>
 	 </div>
  </footer>

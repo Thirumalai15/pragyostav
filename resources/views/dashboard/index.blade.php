@@ -150,6 +150,48 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-stats card-secondary card-round">
+                        <div class="card-body ">
+                            <div class="row">
+                                <div class="col-8 col-stats">
+                                    <div class="numbers">
+                                        <p class="card-category">VR Workshop</p>
+                                        <h4 class="card-title">{{ $vr_workshop }}</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-stats card-secondary card-round">
+                        <div class="card-body ">
+                            <div class="row">
+                                <div class="col-8 col-stats">
+                                    <div class="numbers">
+                                        <p class="card-category">AI Workshop</p>
+                                        <h4 class="card-title">{{ $ai_workshop }}</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card card-stats card-secondary card-round">
+                        <div class="card-body ">
+                            <div class="row">
+                                <div class="col-8 col-stats">
+                                    <div class="numbers">
+                                        <p class="card-category">All workshops</p>
+                                        <h4 class="card-title">{{ $all_workshop }}</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="row">
@@ -262,8 +304,10 @@
                                     <td>{{ $team->team_lead_department}}</td>
                                     <td>{{ $team->team_lead_college }}</td>
                                     <td>{{ $team->team_lead_phone }}</td>
-                                    <td><span>{{ $team->member_1}}</span>
-                                        <span>{{ $team->member_2 }}</span>
+                                    <td>
+                                        <span>{{ $team->member_1}}</span>,
+                                        <span>{{ $team->member_2 }}</span>,
+                                        <span>{{ $team->member_3 }}</span>
                                     </td>
                                     <td>
                                         @if($team->attendance == 0)

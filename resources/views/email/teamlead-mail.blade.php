@@ -30,5 +30,5 @@ Contact Email : <strong>eec.ieteforum@gmail.com</strong>
 <br>
 
 Thanks,<br>
-{{ config('app.name') }}
+Team Pragyotsav
 @endcomponent

@@ -31,6 +31,9 @@ class DashboardController extends Controller
         $robo_soccer = $teams->where('event_name', '=', 'Robo Soccer')->count();
 
         $printing_workshop = $teams->where('event_name', '=', '3d-printing workshop')->count();
+        $vr_workshop = $teams->where('event_name', '=', 'Virtual Reality workshop')->count();
+        $ai_workshop = $teams->where('event_name', '=', 'Artificial Intelligence workshop')->count();
+        $all_workshop = $teams->where('event_name', '=', 'All workshops')->count();
 
         $presentees = $teams->where('attendance', '=', 1)->count();
 
@@ -46,7 +49,7 @@ class DashboardController extends Controller
                 'line_follower',
                 'paper_prsentation',
                 'robo_soccer',
-                'printing_workshop',
+                'printing_workshop', 'vr_workshop', 'ai_workshop', 'all_workshop',
                 'presentees', 'absentees'
             ));
     }
@@ -56,7 +59,7 @@ class DashboardController extends Controller
 
         // dd($reg_id);
         $team = Team::where('reg_id', '=', $reg_id)->first();
-        
+
         // dd($team);
         $attendance = $request->attendance;
         // dd($attendance);

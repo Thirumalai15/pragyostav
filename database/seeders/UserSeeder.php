@@ -17,14 +17,38 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'name' => 'Admin',
-            'email' => 'admin@gmail.com',
-            'email_verified_at' => Carbon::now(),
-            'password' => Hash::make('ieteprag2022'),
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
-        ]);
+        DB::table('users')->truncate();
+
+        DB::table('users')->insert(array(
+            0 =>
+                array(
+                    'name' => 'Admin',
+                    'email' => 'admin@gmail.com',
+                    'email_verified_at' => Carbon::now(),
+                    'password' => Hash::make('ieteprag2022'),
+                    'created_at' => Carbon::now(),
+                    'updated_at' => Carbon::now()
+                ),
+            1 =>
+            array(
+                    'name' => 'Admin 2',
+                    'email' => 'admin2@gmail.com',
+                    'email_verified_at' => Carbon::now(),
+                    'password' => Hash::make('ieteprag2022'),
+                    'created_at' => Carbon::now(),
+                    'updated_at' => Carbon::now()
+                ),
+            2 =>
+            array(
+                    'name' => 'Admin 3',
+                    'email' => 'admin3@gmail.com',
+                    'email_verified_at' => Carbon::now(),
+                    'password' => Hash::make('ieteprag2022'),
+                    'created_at' => Carbon::now(),
+                    'updated_at' => Carbon::now()
+                ),
+
+        ));
     }
 //User: pragyots_admin
     //Database: pragyots_db
