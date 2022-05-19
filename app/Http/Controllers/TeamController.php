@@ -23,7 +23,7 @@ class TeamController extends Controller
         $team->team_lead_year = $request->TYear;
         $team->team_lead_department = $request->TDepartment;
         $team->team_lead_college = $request->TCollege;
-        $team->team_lead_college = $request->TCollege;
+       
        
         $team->member_1 = $request->member_1;
         $team->member_1_phone = $request->phone_1;

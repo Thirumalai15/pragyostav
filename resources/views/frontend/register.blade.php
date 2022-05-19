@@ -182,7 +182,7 @@
                             <option value="workshop">3D-Printing WorkShop</option>
                             <option value="vr-workshop">Virtual Reality WorkShop</option>
                             <option value="ai-workshop">Artifical Intelligence WorkShop</option>
-                            <option value="all-workshop">Register for all three workshops</option>
+                            <option value="all-workshop">Workshop Combo!</option>
                         </select>
                     </div>
                 </div>
@@ -219,7 +219,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear" required>
                                         <option value="" disabled selected>Year</option>
 
                                         <option>First year</option>
@@ -245,8 +245,8 @@
                             <div class="col-md-12" style="margin: 10px;">
                             <p class="mb-n3">A registration fee of ₹250 is applicable.</p>
                                 <input tye="file" name="file" id="bbtn1" required hidden/>
-                                <label class="trlabel" for="bbtn1">Transaction Receipt!</label>
-                                <span class="osen" id="chosen1">Add Screenshot!</span>
+                                <label class="trlabel" for="bbtn2">Transaction Receipt!</label>
+                                <span class="osen" id="chosen2">Add Screenshot!</span>
                             </div>
                             <div class="col-md-12">
                                 <div>
@@ -280,7 +280,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem1"
-                                                name="year_1">
+                                                name="year_1" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -331,7 +331,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem2"
-                                                name="year_2">
+                                                name="year_2" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -398,7 +398,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear" required>
                                         <option value="" disabled selected>Year</option>
 
                                         <option>First year</option>
@@ -457,7 +457,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem1"
-                                                name="year_1">
+                                                name="year_1" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -508,7 +508,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem2"
-                                                name="year_2">
+                                                name="year_2" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -574,7 +574,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear" required>
                                         <option value="" disabled selected>Year</option>
 
                                         <option>First year</option>
@@ -634,7 +634,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem1"
-                                                name="year_1">
+                                                name="year_1" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -685,7 +685,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem2"
-                                                name="year_2">
+                                                name="year_2" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -733,7 +733,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem3"
-                                                name="year_3">
+                                                name="year_3" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -801,7 +801,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear" required>
                                         <option value="" disabled selected>Year</option>
 
                                         <option>First year</option>
@@ -862,7 +862,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem1"
-                                                name="year_1">
+                                                name="year_1" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -913,7 +913,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem2"
-                                                name="year_2">
+                                                name="year_2" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -981,7 +981,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear" required>
                                         <option value="" disabled selected>Year</option>
 
                                         <option>First year</option>
@@ -1041,7 +1041,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem1"
-                                                name="year_1">
+                                                name="year_1" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -1092,7 +1092,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem2"
-                                                name="year_2">
+                                                name="year_2" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -1140,7 +1140,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem33"
-                                                name="year_3">
+                                                name="year_3" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -1208,7 +1208,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear" required>
                                         <option value="" disabled selected>Year</option>
 
                                         <option>First year</option>
@@ -1268,7 +1268,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem1"
-                                                name="year_1">
+                                                name="year_1" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -1319,7 +1319,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem2"
-                                                name="year_2">
+                                                name="year_2" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -1388,7 +1388,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear" required>
                                         <option value="" disabled selected>Year</option>
 
                                         <option>First year</option>
@@ -1412,7 +1412,7 @@
                             </div>
 
                             <div class="col-md-12">
-                            <p class="mb-n3">A registration fee of ₹250 is applicable.</p>
+                            <p class="mb-n3">A registration fee of ₹200 is applicable.</p>
                                 <input type="file" name="file" id="bbtn7" required hidden/>
                                 <label class="trlabel" for="bbtn7">Transaction Receipt!</label>
                                 <span class="osen" id="chosen7">Add Screenshot!</span>
@@ -1447,7 +1447,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem1"
-                                                name="year_1">
+                                                name="year_1" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -1566,7 +1566,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear" required>
                                         <option value="" disabled selected>Year</option>
 
                                         <option>First year</option>
@@ -1626,7 +1626,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem1"
-                                                name="year_1">
+                                                name="year_1" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -1677,7 +1677,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select style="background-color: #171717;" class="form-control rem2"
-                                                name="year_2">
+                                                name="year_2" required>
                                             <option value="" disabled selected>Year</option>
 
                                             <option>First year</option>
@@ -1744,7 +1744,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear" required>
                                         <option value="" disabled selected>Year</option>
 
                                         <option>First year</option>
@@ -1813,7 +1813,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear" required>
                                         <option value="" disabled selected>Year</option>
 
                                         <option>First year</option>
@@ -1882,7 +1882,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear" required>
                                         <option value="" disabled selected>Year</option>
 
                                         <option>First year</option>
@@ -1920,7 +1920,7 @@
                     </form>
                 </div>
                 <div class="idiots" id="all-workshop" style="display: none;">
-                    <h4 class="zxcv">Register for all three workshops(3d-printing, Artificial Intelligence, Virtual Reality</h4>
+                    <h4 class="zxcv">Your are registering for AI and VR workshop combo!</h4>
                     <form method="POST" id="contactForm" enctype="multipart/form-data" name="contactForm" action="{{ route('store.registration') }}"
                           class="contactForm">
                         @csrf
@@ -1929,7 +1929,7 @@
                                 <label><span></span></label>
                             </div>
                             <div class="col-md-6">
-                                <input type="hidden" name="event" value="All workshops">
+                                <input type="hidden" name="event" value="AI & VR Combo">
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -1951,7 +1951,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select style="background-color: #171717;" class="form-control" name="TYear">
+                                    <select style="background-color: #171717;" class="form-control" name="TYear" required>
                                         <option value="" disabled selected>Year</option>
 
                                         <option>First year</option>
@@ -1975,7 +1975,7 @@
                             </div>
 
                             <div class="col-md-12">
-                            <p class="mb-n3">A registration fee of ₹1200 is applicable.</p>
+                            <p class="mb-n3">A registration fee of ₹800 is applicable.</p>
                                 <input type="file" name="file" id="bbtn12" required hidden/>
                                 <label class="trlabel" for="bbtn12">Transaction Receipt!</label>
                                 <span class="osen" id="chosen12">Add Screenshot!</span>

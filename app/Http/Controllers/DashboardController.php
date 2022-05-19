@@ -33,7 +33,7 @@ class DashboardController extends Controller
         $printing_workshop = $teams->where('event_name', '=', '3d-printing workshop')->count();
         $vr_workshop = $teams->where('event_name', '=', 'Virtual Reality workshop')->count();
         $ai_workshop = $teams->where('event_name', '=', 'Artificial Intelligence workshop')->count();
-        $all_workshop = $teams->where('event_name', '=', 'All workshops')->count();
+        $all_workshop = $teams->where('event_name', '=', 'AI & VR Combo')->count();
 
         $presentees = $teams->where('attendance', '=', 1)->count();
 

@@ -31,7 +31,7 @@ class TeamLeadMail extends Mailable
     public function build()
     {
         return $this->markdown('email.teamlead-mail')
-            ->subject('Thank you for registering for the event 🙏' . $this->team['event_name'])
+            ->subject('Thank you for registering for the event ' . $this->team['event_name'])
             ->with('team',$this->team);
     }
 }

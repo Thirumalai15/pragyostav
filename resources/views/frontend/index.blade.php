@@ -370,11 +370,7 @@
                                         <li>Register online for the event and provide the Registration Id on the day of
                                             event.
                                         </li>
-                                        <li>Registration fee:
-                                            <ol>
-                                                <li>For IETE members : 150 rupees</li>
-                                                <li>For Non-IETE members: 300 rupees</li>
-                                            </ol>
+                                        <li>Registration fee of ₹200 is applicable.
                                         </li>
                                     </ol>
 
@@ -384,7 +380,6 @@
                                         <li>Participants will be given a dismantled hardware and will be asked to
                                             assemble it back within a given duration.
                                         </li>
-                                        <li>2 rounds will be conducted.</li>
                                         <li>Round 1 is for qualifier and Round 2 is the final round.</li>
                                         <li>Round 1 => The participants need to assemble the disassembled keyboard.
                                         </li>
@@ -395,16 +390,12 @@
                                             and on how good it works.
                                         </li>
                                         <li>The team which does it with minimum duration will be selected to next round ,and in round two the winners will be finalized.</li>
-                                        <li>In the final round both the winner selected and cash
-                                            prize will be given.
-                                        </li>
-
-
+                                       
                                     </ol>
                                     <h5 class="zxcv">Co-Ordinator :</h5>
                                     <ul>
-                                        <li> Vignesh - 8825873979</li>
-                                        <li> Murali - 7904773955</li>
+                                        <li> Vignesh B - 8825873979</li>
+                                        <li> Muralidharan D - 7904773955</li>
                                     </ul>
                                 </div>
                             </div>
@@ -438,22 +429,16 @@
                                         <li>Register online for the event and provide the Registration Id on the day of
                                             event.
                                         </li>
-                                        <li>Registration fee:
-                                            <ol>
-                                                <li>For IETE members : 200 rupees</li>
-                                                <li>For Non-IETE members: 400 rupees</li>
-                                            </ol>
+                                        <li>Registration fee of ₹200 is applicable.
                                         </li>
                                     </ol>
                                     <h5 class="zxcv">Rules :</h5>
                                     <ol>
-                                        <li>This is a team event, each team will comprise of 2 Participants.</li>
+                                        <li>A team will comprise maximum of 2 Participants.</li>
                                         <li>Each team will have 5 minutes to complete the given design.</li>
                                         <li>All the required instruments for soldering will be provided. </li>
                                         <li>Participants can bring gloves for their own safety purpose.</li>
-                                        <li>Fume removal fans will be provided and should be kept switched on during the
-                                            course of the event.
-                                        </li>
+                                        
                                         <li>Designs and models for soldering will be shown before the start of event and
                                             participants are required to replicate the same.
                                         </li>
@@ -467,8 +452,8 @@
                                     <br>
                                     <h5 class="zxcv">Co-Ordinator :</h5>
                                     <ul>
-                                        <li> Aravindkumar - 7358598007</li>
-                                        <li>Bhuvaneshwaran- 9551673053</li>
+                                        <li> Aravindkumar S - 7358598007</li>
+                                        <li>Bhuvaneshwaran L- 9551673053</li>
                                     </ul>
                                 </div> <!-- / tabs_item -->
                             </div>
@@ -588,11 +573,7 @@
                                         <li>Register online for the event and provide the Registration Id on the day of
                                             event.
                                         </li>
-                                        <li>Registration fee:
-                                            <ol>
-                                                <li>For IETE members : 200 rupees</li>
-                                                <li>For Non-IETE members: 400 rupees</li>
-                                            </ol>
+                                        <li>Registration fee of ₹150 is applicable.
                                         </li>
                                     </ol>
                                     <h5 class="zxcv">Rules :</h5>
@@ -604,7 +585,7 @@
                                                     round shall be eligible for the final presentation.
                                                 </li>
                                                 <li>Qualified candidates are required to bring along with them one soft
-                                                    copy (preferably in a pen drive) and 2 hard copies of the technical
+                                                    copy (preferably in a pen drive) and one hard copy of the technical
                                                     paper on the day of the event.
                                                 </li>
                                                 <li>Any theme related to Engineering and Emerging technology can be
@@ -651,8 +632,7 @@
                                                     lines to separate ideas
                                                 </li>
                                                 <li>Do not use more than 2 font colours per slide.</li>
-                                                <li>The final PowerPoint presentation file must be shared 2 days before
-                                                    the actual day of event to the specified mail ID.
+                                                <li>The final PowerPoint presentation file must be mailed on or before 24th May 2022 to eec.ieteforum@gmail.com.
                                                 </li>
 
                                             </ol>
@@ -748,7 +728,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="painting" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        <div class="modal fade" id="printing" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
              aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content" style="background-color:#171717;">
@@ -771,14 +751,140 @@
                                             of
                                             event.
                                         </li>
-                                        <li>Registration fee: 700 rupees
-
-                                        </li>
+                                        <li>Registration fee of ₹500 is applicable.</li>
                                     </ol>
                                     <h5 class="zxcv">Co-Ordinator :</h5>
                                     <ul>
                                         <li>Sowmiya - 8056844228</li>
                                         <li>Smiritishree - 9176956481</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="reality" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="background-color:#171717;">
+                    <div class="modal-header">
+                        <h5 class="modal-title zxcv" id="exampleModalLongTitle">Virtual Reality Workshop</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab">
+
+
+                            <div class="tab_content">
+                                <div class="tabs_item">
+                                    <h5 class="zxcv">Registration :</h5>
+                                    <ol>
+                                        <li>College ID is mandatory.</li>
+                                        <li>Register online for the Workshop and provide the Registration Id on the day
+                                            of
+                                            event.
+                                        </li>
+                                        <li>Registration fee of ₹500 is applicable.</li>
+                                    </ol>
+                                    <h5 class="zxcv">Co-Ordinator :</h5>
+                                    <ul>
+                                        <li>Gayathri S - 9445877387</li>
+                                        <li>Jabillo Jose - 9384686406</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="intelligence" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="background-color:#171717;">
+                    <div class="modal-header">
+                        <h5 class="modal-title zxcv" id="exampleModalLongTitle">Artificial Intelligence Workshop</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab">
+
+
+                            <div class="tab_content">
+                                <div class="tabs_item">
+                                    <h5 class="zxcv">Registration :</h5>
+                                    <ol>
+                                        <li>College ID is mandatory.</li>
+                                        <li>Register online for the Workshop and provide the Registration Id on the day
+                                            of
+                                            event.
+                                        </li>
+                                        <li>Registration fee of ₹500 is applicable.</li>
+                                    </ol>
+                                    <h5 class="zxcv">Co-Ordinator :</h5>
+                                    <ul>
+                                        <li>Gayathri S - 9445877387</li>
+                                        <li>Jabillo Jose - 9384686406</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        <a target="_blank" href="{{ route('eventReg') }}" class="btn btn-primary">Register Now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="allregister" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="background-color:#171717;">
+                    <div class="modal-header">
+                        <h5 class="modal-title zxcv" id="exampleModalLongTitle">VI & AI Combo Workshops</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab">
+
+
+                            <div class="tab_content">
+                                <div class="tabs_item">
+                                    <h5 class="zxcv">Registration :</h5>
+                                    <ol>
+                                        <li>College ID is mandatory.</li>
+                                        <li>Register online for the Workshop and provide the Registration Id on the day
+                                            of
+                                            event.
+                                        </li>
+                                        <li>Registration fee of ₹800 is applicable.
+
+                                        </li>
+                                    </ol>
+                                    <h5 class="zxcv">Co-Ordinator :</h5>
+                                    <ul>
+                                        <li>Gayathri S - 9445877387</li>
+                                        <li>Jabillo Jose - 9384686406</li>
                                     </ul>
                                 </div>
                             </div>
@@ -986,96 +1092,198 @@
                      <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Workshops</span></h2>
                         <div class='border'></div>
                     </div>
-                    <div class="row gutter-v3">
-                        <div class="col-md-6 col-lg-4 mb-4 listing-item">
-                            <a data-toggle="modal" data-target="#racing">
-                                <div class="feature-v1 " data-aos="fade-up" data-aos-delay="200">
-                                    <div class="wrap-icon mb-3">
-                                        <img src="{{ asset('theme/images/printing.jpg') }}" alt="Icon" style="width: 100%"/>
-                                    </div>
-                                    <h3 class="zxcv">3D-Printing</h3>
-                                    <p>This eye-catching event is all about the mini bots that
-                                        should navigate carefully
-                                        along the stipulated path within the
-                                        stipulated time, avoiding and tackling obstacles to the finishing line. </p>
-                                    <p class="font-weight-bold text-xl-left gold_color">Explore
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                            <polyline points="9 6 15 12 9 18"/>
-                                        </svg>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-4 listing-item">
-                            <a data-toggle="modal" data-target="#drone">
-                                <div class="feature-v1 " data-aos="fade-up" data-aos-delay="200">
-                                    <div class="wrap-icon mb-3">
-                                        <img src="{{ asset('theme/images/drone.jpg') }}" alt="Icon"
-                                             width="100%">
-                                    </div>
-                                    <h3 class="zxcv">Artificial Intelligence</h3>
-                                    <p>Fly Above and Beyond. Pilots, Get ready for an exciting drone racing league .Find your path and fly onward.It is a sport where you control drones and unleash your skills.Fly free and show your unique perspective. Come, compete and get a chance to win prizes.</p>
-                                    <p class="font-weight-bold text-xl-left gold_color">Explore
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                            <polyline points="9 6 15 12 9 18"/>
-                                        </svg>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-4 listing-item">
-                            <a data-toggle="modal" data-target="#war">
-                                <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
-                                    <div class="wrap-icon mb-3">
-                                        <img src="{{ asset('theme/images/robowar.jpg')}}" alt="Icon"
-                                             width="100%">
-                                    </div>
-                                    <h3 class="zxcv">Virtual Reality</h3>
-                                    <p>We are all soldiers in the war of life. Now ready for a real fun war?! Get your
-                                        robots to battle their ways in the
-                                        field, abiding rules, pressures and tests to top up the leaderboard and win
-                                        exciting prizes. </p>
-                                    <p class="font-weight-bold text-xl-left gold_color">Explore
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                            <polyline points="9 6 15 12 9 18"/>
-                                        </svg>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
+                    <!--<div class="row gutter-v3">-->
+                    <!--    <div class="col-md-6 col-lg-4 mb-4 listing-item">-->
+                    <!--        <a data-toggle="modal" data-target="#racing">-->
+                    <!--            <div class="feature-v1 " data-aos="fade-up" data-aos-delay="200">-->
+                    <!--                <div class="wrap-icon mb-3">-->
+                    <!--                    <img src="{{ asset('theme/images/printing.jpg') }}" alt="Icon" style="width: 100%"/>-->
+                    <!--                </div>-->
+                    <!--                <h3 class="zxcv">3D-Printing</h3>-->
+                    <!--                <p>This eye-catching event is all about the mini bots that-->
+                    <!--                    should navigate carefully-->
+                    <!--                    along the stipulated path within the-->
+                    <!--                    stipulated time, avoiding and tackling obstacles to the finishing line. </p>-->
+                    <!--                <p class="font-weight-bold text-xl-left gold_color">Explore-->
+                    <!--                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">-->
+                    <!--                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>-->
+                    <!--                        <polyline points="9 6 15 12 9 18"/>-->
+                    <!--                    </svg>-->
+                    <!--                </p>-->
+                    <!--            </div>-->
+                    <!--        </a>-->
+                    <!--    </div>-->
+                    <!--    <div class="col-md-6 col-lg-4 mb-4 listing-item">-->
+                    <!--        <a data-toggle="modal" data-target="#drone">-->
+                    <!--            <div class="feature-v1 " data-aos="fade-up" data-aos-delay="200">-->
+                    <!--                <div class="wrap-icon mb-3">-->
+                    <!--                    <img src="{{ asset('theme/images/drone.jpg') }}" alt="Icon"-->
+                    <!--                         width="100%">-->
+                    <!--                </div>-->
+                    <!--                <h3 class="zxcv">Artificial Intelligence</h3>-->
+                    <!--                <p>Fly Above and Beyond. Pilots, Get ready for an exciting drone racing league .Find your path and fly onward.It is a sport where you control drones and unleash your skills.Fly free and show your unique perspective. Come, compete and get a chance to win prizes.</p>-->
+                    <!--                <p class="font-weight-bold text-xl-left gold_color">Explore-->
+                    <!--                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">-->
+                    <!--                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>-->
+                    <!--                        <polyline points="9 6 15 12 9 18"/>-->
+                    <!--                    </svg>-->
+                    <!--                </p>-->
+                    <!--            </div>-->
+                    <!--        </a>-->
+                    <!--    </div>-->
+                    <!--    <div class="col-md-6 col-lg-4 mb-4 listing-item">-->
+                    <!--        <a data-toggle="modal" data-target="#war">-->
+                    <!--            <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">-->
+                    <!--                <div class="wrap-icon mb-3">-->
+                    <!--                    <img src="{{ asset('theme/images/robowar.jpg')}}" alt="Icon"-->
+                    <!--                         width="100%">-->
+                    <!--                </div>-->
+                    <!--                <h3 class="zxcv">Virtual Reality</h3>-->
+                    <!--                <p>We are all soldiers in the war of life. Now ready for a real fun war?! Get your-->
+                    <!--                    robots to battle their ways in the-->
+                    <!--                    field, abiding rules, pressures and tests to top up the leaderboard and win-->
+                    <!--                    exciting prizes. </p>-->
+                    <!--                <p class="font-weight-bold text-xl-left gold_color">Explore-->
+                    <!--                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">-->
+                    <!--                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>-->
+                    <!--                        <polyline points="9 6 15 12 9 18"/>-->
+                    <!--                    </svg>-->
+                    <!--                </p>-->
+                    <!--            </div>-->
+                    <!--        </a>-->
+                    <!--    </div>-->
                         
-                    </div>
-                    
-                    <div class="section-heading-wrap text-center mb-5">
+                    <!--</div>-->
+                    <!--<div class="section-heading-wrap text-center mb-5">-->
                         <!-- designed by me... enjoy! -->
-                        <div class="wrapper">
-                            <a class="cta" target="_blank" href="{{ route('eventReg') }}">
-                                <span id="sspan" style='font-size:1.6rem;'>Register for all three workshops @₹1200 only!! </span>
-                                <span id="sspan">
-                                    <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1"
-                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <path class="one"
-                                                  d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
-                                                  fill="#FFFFFF"></path>
-                                            <path class="two"
-                                                  d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
-                                                  fill="#FFFFFF"></path>
-                                            <path class="three"
-                                                  d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
-                                                  fill="#FFFFFF"></path>
-                                        </g>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
+                    <!--    <div class="wrapper">-->
+                    <!--        <a class="cta" target="_blank" href="{{ route('eventReg') }}">-->
+                    <!--            <span id="sspan" style='font-size:1.6rem;'>Register for all three workshops @₹1200 only!! </span>-->
+                    <!--            <span id="sspan">-->
+                    <!--                <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1"-->
+                    <!--                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">-->
+                    <!--                    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">-->
+                    <!--                        <path class="one"-->
+                    <!--                              d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"-->
+                    <!--                              fill="#FFFFFF"></path>-->
+                    <!--                        <path class="two"-->
+                    <!--                              d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"-->
+                    <!--                              fill="#FFFFFF"></path>-->
+                    <!--                        <path class="three"-->
+                    <!--                              d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"-->
+                    <!--                              fill="#FFFFFF"></path>-->
+                    <!--                    </g>-->
+                    <!--                </svg>-->
+                    <!--            </span>-->
+                    <!--        </a>-->
+                    <!--    </div>-->
+                    <!--</div>-->
                
-                   
+                   <!-- TESTIMONIALS -->
+<section class="testimonials">
+	<div class="container">
 
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="customers-testimonials" class="owl-carousel">
+
+            <!--TESTIMONIAL 1 -->
+            <div class="item">
+            <a data-toggle="modal" data-target="#reality">
+              <div class="shadow-effect">
+                  <figure class="sixteen-nine-img">
+                <img class="img-responsive" src="{{ asset('theme/images/reality.jpeg')}}" alt="">
+                </figure>
+                <div class="item-details" style='height:310px;position: relative;'>
+									<h5>Virtual Reality</h5>
+									<p>Escape the hussle of reality and immerse yourself in Virtual Reality with our 'Workshop on Virtual Reality', where you can learn, develop and practice it.
+Start fresh and interested and leave trained and much more interested.</p>
+									<p  style="position: absolute; bottom: 0px;" class="font-weight-bold text-xl-left gold_color">Explore
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <polyline points="9 6 15 12 9 18"/>
+                                        </svg>
+                                    </p>
+								</div>
+              </div>
+              </a>
+            </div>
+            <!--END OF TESTIMONIAL 1 -->
+            <!--TESTIMONIAL 2 -->
+            <div class="item">
+                <a data-toggle="modal" data-target="#intelligence">
+              <div class="shadow-effect">
+                  <figure class="sixteen-nine-img">
+                <img class="img-responsive" src="{{ asset('theme/images/Artificial-Intelligence-10.webp')}}" alt="">
+                </figure>
+                <div class="item-details" style='height:310px;position: relative;'>
+									<h5>Artificial Intelligence</h5>
+									<p>"Predicting the future isn't magic, it is Artificial Intelligence"- Dave Waters.
+Get on with one of the most evolving platforms, 'Workshop on Artificial Intelligence', where you can learn and converse to experiment. 
+Start the search for knowledge with an easiest way of understanding AI.</p>
+									<p style="position: absolute; bottom: 0px;" class="font-weight-bold text-xl-left gold_color">Explore
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <polyline points="9 6 15 12 9 18"/>
+                                        </svg>
+                                    </p>
+								</div>
+              </div>
+              </a>
+            </div>
+            <!--END OF TESTIMONIAL 2 -->
+            <!--TESTIMONIAL 3 -->
+            <div class="item">
+                <a data-toggle="modal" data-target="#printing">
+              <div class="shadow-effect">
+                  <figure class="sixteen-nine-img">
+                <img class="img-responsive" src="{{ asset('theme/images/printing.jpg')}}" alt="">
+                </figure>
+                <div class="item-details" style='height:310px;position: relative;'>
+									<h5>3D-Printing Workshop</h5>
+									<p>Printing is fine. Heard of 3D printing? Join this event to learn more and to
+                                        manure your knowledge about it and also to
+                                        be a part of a fun-filled problem (design) solving.</p>
+									<p style="position: absolute; bottom: 0px;" class="font-weight-bold text-xl-left gold_color">Explore
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <polyline points="9 6 15 12 9 18"/>
+                                        </svg>
+                                    </p>
+								</div>
+								
+              </div>
+              </a>
+            </div>
+            <!--END OF TESTIMONIAL 3 -->
+            <!--TESTIMONIAL 4 -->
+            <div class="item">
+                <a data-toggle="modal" data-target="#allregister">
+              <div class="shadow-effect">
+                  <figure class="sixteen-nine-img">
+                <img class="img-responsive" src="{{ asset('theme/images/VR-AI-Combined.jpg')}}" alt="">
+                </figure>
+                <div class="item-details" style='position:relative;height:310px;'>
+									<h5>Workshop Combo!</h5>
+									<p>Come be a part of AI and VR workshop for just ₹800/-.
+									</p>
+									<p style="position: absolute; bottom: 0px;" class="font-weight-bold text-xl-left gold_color">Explore
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <polyline points="9 6 15 12 9 18"/>
+                                        </svg>
+                                    </p>
+								</div>
+              </div>
+              </a>
+            </div>
+            <!--END OF TESTIMONIAL 4 -->
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- END OF TESTIMONIALS -->
                 </div>
 
     

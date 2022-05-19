@@ -31,7 +31,78 @@
     <link href="{{ asset('theme/style.css') }}" rel="stylesheet">
 
     <style type="text/css">
+    
+    figure.sixteen-nine-img {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding-top: 56.25%;
+  position: relative;
+}
+figure.sixteen-nine-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+        
+        .testimonials {
+	 
+	 position: relative;
+	 padding-top: 20px;
+}
+ 
+ #customers-testimonials .item-details {
+	 background-color: #333;
+	 padding: 20px 10px;
+	 text-align: center;
+}
+ #customers-testimonials .item-details h5 {
+	 margin: 0 0 15px;
+	 color: #FFDF33;
+	 font-weight:bold;
+	 font-size: 22px;
+	 line-height: 18px;
+}
 
+ #customers-testimonials .item-details p {
+	 font-size: 16px;
+}
+ #customers-testimonials .item {
+	 text-align: center;
+	 margin-bottom: 10px;
+}
+ .owl-carousel .owl-nav [class*="owl-"] {
+	 -webkit-transition: all 0.3s ease;
+	 transition: all 0.3s ease;
+}
+ .owl-carousel .owl-nav [class*="owl-"].disabled:hover {
+	 background-color: #fff;
+}
+ .owl-carousel {
+	 position: relative;
+}
+ .owl-carousel .owl-next, .owl-carousel .owl-prev {
+	 width: 50px;
+	 height: 50px;
+	 line-height: 50px;
+	 border-radius: 50%;
+	 position: absolute;
+	 top: 30%;
+	 font-size: 20px;
+	 color: #fff;
+	 border: 1px solid #ddd;
+	 text-align: center;
+	 z-index:9993534543;
+}
+ .owl-carousel .owl-prev {
+	 left: -70px;
+}
+ .owl-carousel .owl-next {
+	 right: -70px;
+}
+ 
         .border {
             border-top: 2px solid rgba(236, 239, 241, 0.07);
             height: 1px;
@@ -215,6 +286,34 @@
 
 <script src="{{ asset('theme/js/scripts-dist.js')}}"></script>
 <script src="{{ asset('theme/js/main.js')}}"></script>
+<script>
+    jQuery(document).ready(function($) {
+"use strict";
+$('#customers-testimonials').owlCarousel( {
+		loop: true,
+		center: true,
+		items: 3,
+		margin: 30,
+		autoplay: true,
+		dots:true,
+    nav:true,
+		autoplayTimeout: 5000,
+		smartSpeed: 850,
+  	navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 2
+			},
+			1170: {
+				items: 3
+			}
+		}
+	});
+});
+</script>
 <script>
     // // Set the date we're counting down to
     // var countDownDate = new Date("May 26, 2022").getTime();

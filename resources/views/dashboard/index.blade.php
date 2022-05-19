@@ -184,7 +184,7 @@
                             <div class="row">
                                 <div class="col-8 col-stats">
                                     <div class="numbers">
-                                        <p class="card-category">All workshops</p>
+                                        <p class="card-category">Combo workshops</p>
                                         <h4 class="card-title">{{ $all_workshop }}</h4>
                                     </div>
                                 </div>

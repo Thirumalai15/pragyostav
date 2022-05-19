@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => 'Pragyotsav | A National Level Techinal Festival',
     'admin_mail' => 'eec.ieteforum@gmail.com', // TODO change this after deploying
     
     'iete_member_fee' => '150',
