@@ -12,15 +12,17 @@ class TeamLeadMail extends Mailable
     use Queueable, SerializesModels;
 
     public $team;
+    public $details;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($team)
+    public function __construct($team,$details)
     {
         $this->team = $team;
+        $this->details = $details;
     }
 
     /**
@@ -32,6 +34,7 @@ class TeamLeadMail extends Mailable
     {
         return $this->markdown('email.teamlead-mail')
             ->subject('Thank you for registering for the event ' . $this->team['event_name'])
-            ->with('team',$this->team);
+            ->with('team',$this->team)
+            ->with('details',$this->details);
     }
 }

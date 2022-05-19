@@ -20,13 +20,20 @@ This e-mail is to inform you that you have been successfully registered for the 
 @if ($team['member_3'] != null)
 <li>Third Teammate : <strong>{{ $team['member_2'] }}</strong></li>
 @endif
+</ul><br>
+<strong>Event details</strong>
+<ul>
+<li>Event Name: <strong>{{ $team['event_name'] }}</strong> </li>
+<li>Event Date: <strong>{{ $details['day'] }}</strong> </li>
+<li>Event Time: <strong>{{ $details['time'] }}</strong> </li>
+<li>Event Venue: <strong>{{ $details['venue'] }}</strong> </li>
 </ul>
 @endcomponent
 
 <p>For queries contact us at any time.</p>
 
 @component('mail::panel')
-Keshav G - President <strong>9884809092 </strong>
+Keshav G - President <strong>9884809092 </strong><br>
 Vishwa T - Treasurer <strong>9600297742 </strong>
 <br>
 Drop a mail @ <strong>eec.ieteforum@gmail.com</strong>

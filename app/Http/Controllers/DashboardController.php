@@ -26,7 +26,7 @@ class DashboardController extends Controller
 
         $line_follower = $teams->where('event_name', '=', 'Robo line follower')->count();
 
-        $paper_prsentation = $teams->where('event_name', '=', 'Technical Paper Presentaion')->count();
+        $paper_prsentation = $teams->where('event_name', '=', 'Technical Paper Presentation')->count();
 
         $robo_soccer = $teams->where('event_name', '=', 'Robo Soccer')->count();
 
