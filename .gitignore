@@ -1,5 +1,5 @@
 /vendor
 /bootstrap
 .env
-/storage/*.key
-/storage/*.pem
+/storage/framework
+/storage/logs
