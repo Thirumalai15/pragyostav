@@ -2,3 +2,4 @@
 /bootstrap
 .env
 /storage/*.key
+/storage/*.pem
