@@ -5,27 +5,27 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Knight - Free Bootstrap 4 Product Landing Page Template</title>
+        <title>Pragyotsav - A National Level Techinal Fest</title>
         <meta name="description" content="Knight is a beautiful Bootstrap 4 template for product landing pages." />
 
         <!--Inter UI font-->
         <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
 
         <!--vendors styles-->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <!-- Bootstrap CSS / Color Scheme -->
         <link rel="stylesheet" href="css/default.css" id="theme-color">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/custom.css">
     </head>
 
-    <body style="overflow-x: hidden;">
+    <body>
 
         <!--navigation-->
-        <section class="smart-scroll">
+        <header class="smart-scroll">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md navbar-dark">
                     <a class="navbar-brand heading-black" href="index.html">
@@ -39,13 +39,13 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#features">Features</a>
+                                <a class="nav-link page-scroll" href="#aboutus">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+                                <a class="nav-link page-scroll" href="#pricing">Events</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#faq">FAQ</a>
+                                <a class="nav-link page-scroll" href="#faq">Gallery</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link page-scroll" href="#blog">Blog</a>
@@ -61,12 +61,11 @@
                     </div>
                 </nav>
             </div>
-        </section>
+        </header>
 
         <!--hero header-->
-        <section class="py-7 py-md-0 bg-hero" id="home">
+        <section class="bg-hero" id="home">
             <!-- <div class="container"> -->
-            <div class="">
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -75,7 +74,7 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/blog-1.jpg" class="d-block w-100" alt="...">
+                            <img src="img/blog-1.jpg" class="d-block w-100 " alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>First slide label</h5>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -105,7 +104,8 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-            </div>
+            <!-- </div> -->
+        </section>
 
             <!-- <div class="row vh-md-100">
             <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
@@ -118,54 +118,53 @@
                 </button>
             </div>
         </div> -->
+
+
+
+        <!-- features section -->
+        <section class="vh-100 " id="features">
+            <div class="container">
+                <div class="row my-6">
+                    <div class="col-md-6 mx-auto text-center">
+                        <h2 class="heading-black">About us </h2>
+                        <!-- <hr class="border"></div> -->
+                        <hr class="divider">
+
+                    </div>
+                </div>
+                <div class="row my-6">
+                    <div class="col-md-6 mr-auto" data-aos="fade-right" data-aos-duration="500">
+                        <h4 class="text-muted">Our College</h4>
+                        <h2>Easwari Engineering College</h4>
+                            <p class="mb-3 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ad,
+                                neque numquam aperiam natus nemo dolor iste nihil, delectus ab recusandae animi
+                                aspernatur sapiente iusto itaque dicta vero molestiae quia?</p>
+                            <a href="#" class="btn btn-light">
+                                Read more
+                            </a>
+                    </div>
+                    <div class="col-md-6 mr-auto " data-aos="fade-left" data-aos-duration="500">
+                        <div class="slick-about">
+                            <img src="img/blog-1.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 1" />
+                            <img src="img/blog-2.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 2" />
+                            <img src="img/blog-3.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 3" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- features section -->
-        <section class="pt-6 pb-7" id="features">
+        <section class="mb-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 mx-auto text-center">
-                        <h2 class="heading-black">Knight offers everything you need.</h2>
-                        <p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-                            in nisi
-                            commodo, tempus odio a, vestibulum nibh.</p>
-                    </div>
-                </div>
-
-
-                <div class="row mt-6">
-                    <div class="col-md-6 mr-auto aos-init aos-animate" data-aos="fade-right" data-aos-duration="500"
-                        data-aos-offest="250">
-                        <h2>IETE</h2>
-                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis
-                            pulvinar
-                            vestibulum. Donec eleifend, sem sed dictum mattis, turpis purus placerat eros.</p>
-                        <a href="#" class="btn btn-light">
-                            Try the live demo
-                        </a>
-                    </div>
-                    <div class="col-md-6 mr-auto aos-init aos-animate" data-aos="fade-left" data-aos-duration="500"
-                        data-aos-offest="250">
+                <div class="row ">
+                    <div class="col-md-6 mr-auto" data-aos="fade-right" data-aos-duration="500">
                         <div class="slick-about">
                             <img src="img/blog-1.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 1" />
                             <img src="img/blog-2.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 2" />
                             <img src="img/blog-3.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 3" />
                         </div>
                     </div>
-                </div>
-
-                <div class="row mt-8 mb-5">
-                    <div class="col-md-6 mr-auto aos-init aos-animate" data-aos="fade-right" data-aos-duration="500"
-                        data-aos-offest="250">
-                        <div class="slick-about">
-                            <img src="img/blog-1.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 1" />
-                            <img src="img/blog-2.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 2" />
-                            <img src="img/blog-3.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 3" />
-                        </div>
-                    </div>
-                    <div class="col-md-6 mr-auto aos-init aos-animate" data-aos="fade-left" data-aos-duration="500"
-                        data-aos-offest="250">
+                    <div class="col-md-6 mr-auto" data-aos="fade-left" data-aos-duration="500">
                         <h2>Pragyotsav</h2>
                         <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis
                             pulvinar
@@ -176,6 +175,18 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
+                <h2 class="heading-black text-capitalize">Quickly build landing pages with Knight</h1>
+                    <p class="lead py-2">Knight is a platform that helps freelancers and companies build beautiful
+                        landing
+                        pages in minutes. Sign up for free.</p>
+                    <button class="btn btn-primary d-inline-flex flex-row align-items-center">
+                        Get started now
+                        <em class="ml-2" data-feather="arrow-right"></em>
+                    </button>
+            </div>
+
         </section>
 
 
@@ -191,7 +202,7 @@
                     </div>
                 </div>
                 <h3>Technical Events</h1>
-                    <hr>
+                    <!-- <hr> -->
                     <div class="row mt-5 slick-events-slider">
                         <div class="col-md-4">
                             <div class="card">
@@ -292,7 +303,7 @@
                     </div>
 
                     <h3>Non Technical Events</h1>
-                        <hr>
+                        <!-- <hr> -->
                         <div class="row mt-5 slick-events-slider">
                             <div class="col-md-4">
                                 <div class="card">
@@ -397,57 +408,84 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="row mt-6">
-            <div class="col-md-6 mx-auto text-center">
-                <a href="#" class="btn btn-primary">View all posts</a>
             </div>
-        </div> -->
             </div>
         </section>
 
         <!-- teams section -->
-        <section class="py-6" id="blog">
+        <section class="py-7 " id="blog">
             <div class="container">
                 <div class="row">
-                    <div class="custom-card">
-                        <div class="top-bar"></div>
-                        <div class="top">
-                        </div>
-                        <div class="content ">
-                            <img src="https://images.pexels.com/photos/2826131/pexels-photo-2826131.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-                                alt="">
-                            <strong class="text-light">Rohan Tolani</strong>
-                            <p>rooohan@gmail.com</p>
+                    <div class="col-md-6 mx-auto text-center">
+                        <h2 class="heading-black">Our Presenters</h2>
+                        <hr class="divider">
+                        <!-- <p class="text-muted lead">What's new at Knight.</p> -->
+                    </div>
+                </div>
+                <div class="row my-6">
+                    <div class="col-md-3 mb-5">
+                        <div class="card aos-init aos-animate">
+                            <div class="top-bar"></div>
+                            <div class="top"></div>
+                            <img class="card-img-top p-4"
+                                src="https://images.pexels.com/photos/2826131/pexels-photo-2826131.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                                alt="" style="border-radius: 40px">
+                            <div class="text-center my-0
+                            ">
+                                <strong class="text-light text-center">Rohan Tolani</strong>
+                                <p>rooohan@gmail.com</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="custom-card">
-                        <div class="top-bar"></div>
-                        <div class="top">
-                        </div>
-                        <div class="content ">
-                            <img src="https://images.pexels.com/photos/2826131/pexels-photo-2826131.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-                                alt="">
-                            <strong class="text-light">Rohan Tolani</strong>
-                            <p>rooohan@gmail.com</p>
+                    <div class="col-md-3 mb-5">
+                        <div class="card aos-init aos-animate">
+                            <div class="top-bar"></div>
+                            <div class="top"></div>
+                            <img class="card-img-top p-4"
+                                src="https://images.pexels.com/photos/2826131/pexels-photo-2826131.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                                alt="" style="border-radius: 40px">
+                            <div class="text-center my-0
+                            ">
+                                <strong class="text-light text-center">Rohan Tolani</strong>
+                                <p>rooohan@gmail.com</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="custom-card">
-                        <div class="top-bar"></div>
-                        <div class="top">
+                    <div class="col-md-3 mb-5">
+                        <div class="card aos-init aos-animate">
+                            <div class="top-bar"></div>
+                            <div class="top"></div>
+                            <img class="card-img-top p-4"
+                                src="https://images.pexels.com/photos/2826131/pexels-photo-2826131.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                                alt="" style="border-radius: 40px">
+                            <div class="text-center my-0
+                            ">
+                                <strong class="text-light text-center">Rohan Tolani</strong>
+                                <p>rooohan@gmail.com</p>
+                            </div>
                         </div>
-                        <div class="content ">
-                            <img src="https://images.pexels.com/photos/2826131/pexels-photo-2826131.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-                                alt="">
-                            <strong class="text-light">Rohan Tolani</strong>
-                            <p class="text-yellow">rooohan@gmail.com</p>
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <div class="card aos-init aos-animate">
+                            <div class="top-bar"></div>
+                            <div class="top"></div>
+                            <img class="card-img-top p-4"
+                                src="https://images.pexels.com/photos/2826131/pexels-photo-2826131.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                                alt="" style="border-radius: 40px">
+                            <div class="text-center my-0
+                            ">
+                                <strong class="text-light text-center">Rohan Tolani</strong>
+                                <p>rooohan@gmail.com</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
 
 
         <!--footer-->
-        <footer class="py-6 bg-dark">
+        <footer class="py-6 bg-dark section-angle top-right ">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5 mr-auto">
@@ -540,6 +578,7 @@
         <script>
             AOS.init();
         </script>
+
     </body>
 
 </html>
