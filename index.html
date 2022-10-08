@@ -12,7 +12,7 @@
         <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
 
         <!--vendors styles-->
-
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -28,9 +28,12 @@
         <header class="smart-scroll">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md navbar-dark">
-                    <a class="navbar-brand heading-black" href="index.html">
-                        Knight
+                    <a href="#">
+                        <img src="img/logos/prag_logo.png" width="50" height="50" alt="">
                     </a>
+                    <!-- <a class="navbar-brand heading-black" href="index.html">
+                        <img src="img/logos/prga-text-gold.png" width="1-0" height="50" alt="">
+                    </a> -->
                     <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
                         data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -39,24 +42,30 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
+                                <a class="nav-link page-scroll" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link page-scroll" href="#aboutus">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#pricing">Events</a>
+                                <a class="nav-link page-scroll" href="#events">Events</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#faq">Gallery</a>
+                                <a class="nav-link page-scroll" href="#gallery">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#blog">Blog</a>
+                                <a class="nav-link page-scroll" href="#presenters">Our presenters</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link page-scroll" href="#contactus">Contact Us</a>
+                            </li>
+                            <!-- <li class="nav-item">
                                 <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary"
                                     href="#">
                                     <em data-feather="layout" width="18" height="18" class="mr-2"></em>
                                     Try Generator
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </nav>
@@ -66,48 +75,48 @@
         <!--hero header-->
         <section class="bg-hero" id="home">
             <!-- <div class="container"> -->
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/blog-1.jpg" class="d-block w-100 " alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/blog-2.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/blog-3.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/blog-1.jpg" class="d-block w-100 " alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class="carousel-item">
+                        <img src="img/blog-2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/blog-3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                    </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
             <!-- </div> -->
         </section>
 
-            <!-- <div class="row vh-md-100">
+        <!-- <div class="row vh-md-100">
             <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
                 <h1 class="heading-black text-capitalize">Quickly build landing pages with Knight</h1>
                 <p class="lead py-3">Knight is a platform that helps freelancers and companies build beautiful landing
@@ -122,7 +131,7 @@
 
 
         <!-- features section -->
-        <section class="vh-100 " id="features">
+        <section class="vh-100 " id="aboutus">
             <div class="container">
                 <div class="row my-6">
                     <div class="col-md-6 mx-auto text-center">
@@ -164,7 +173,8 @@
                             <img src="img/blog-3.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 3" />
                         </div>
                     </div>
-                    <div class="col-md-6 mr-auto" data-aos="fade-left" data-aos-duration="500">
+                    <div class="col-md-5 mr-5" data-aos="fade-left" data-aos-duration="500">
+                        <h4 class="text-muted">The Event</h4>
                         <h2>Pragyotsav</h2>
                         <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis
                             pulvinar
@@ -192,7 +202,7 @@
 
 
         <!--news section-->
-        <section class="py-7 bg-dark section-angle top-left bottom-left" id="blog">
+        <section class="py-7 bg-dark section-angle top-left bottom-left" id="events">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 mx-auto text-center">
@@ -409,11 +419,113 @@
                             </div>
                         </div>
             </div>
+        </section>
+
+
+        <section class="mt-5" id="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto text-center">
+                        <h2 class="heading-black">Gallery</h2>
+                        <hr class="divider">
+                        <!-- <p class="text-muted lead">What's new at Knight.</p> -->
+                    </div>
+                </div>
+                <div class="row g-4 mt-5">
+                    <div class="col-lg-6">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="card  text-white w-100 h-100 aos-init">
+                                    <img src="img/blog-1.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay card-footer">
+                                        <h5 class="card-title">Card title</h5>
+                                        <!-- <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p> -->
+                                        <!-- <p class="card-text">Last updated 3 mins ago</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 my-4">
+                                <div class="card  text-white w-100 h-100">
+                                    <img src="img/blog-2.jpg" class="card-img" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="card bg-dark text-white w-100 h-100">
+                                    <img src="img/blog-1.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay card-footer">
+                                        <h5 class="card-title">Card title</h5>
+                                        <!-- <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p> -->
+                                        <!-- <p class="card-text">Last updated 3 mins ago</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-4">
+                                <div class="card bg-dark text-white w-100 h-100">
+                                    <img src="img/blog-3.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay card-footer">
+                                        <h5 class="card-title">Card title</h5>
+                                        <!-- <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p> -->
+                                        <!-- <p class="card-text">Last updated 3 mins ago</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-4">
+                                <div class="card bg-dark text-white w-100 h-100">
+                                    <img src="img/blog-3.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay card-footer">
+                                        <h5 class="card-title">Card title</h5>
+                                        <!-- <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p> -->
+                                        <!-- <p class="card-text">Last updated 3 mins ago</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-2">
+                                <div class="card bg-dark text-white w-100 h-100">
+                                    <img src="img/blog-3.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay card-footer">
+                                        <h5 class="card-title">Card title</h5>
+                                        <!-- <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p> -->
+                                        <!-- <p class="card-text">Last updated 3 mins ago</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-2">
+                                <div class="card bg-dark text-white w-100 h-100">
+                                    <img src="img/blog-3.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay card-footer">
+                                        <h5 class="card-title">Card title</h5>
+                                        <!-- <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p> -->
+                                        <!-- <p class="card-text">Last updated 3 mins ago</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
+
         <!-- teams section -->
-        <section class="py-7 " id="blog">
+        <section class="py-5" id="presenters">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 mx-auto text-center">
