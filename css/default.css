@@ -11295,7 +11295,7 @@ body {
 
 .slick-next:before,
 .slick-prev:before {
-  color: rgba(29, 233, 182, 0.2);
+  color: rgba(255, 233, 51, 0.2);
 }
 
 .slick-next:hover:before,
