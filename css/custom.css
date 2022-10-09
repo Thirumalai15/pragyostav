@@ -73,6 +73,11 @@ hr:after {
     box-shadow: 0 0 10px rgba(0,0,0,.2);
   }
 
+  .cursive-text {
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 2px;
+  }
+
   /* .content strong {
     font-weight: 500;
     color: #141414;
